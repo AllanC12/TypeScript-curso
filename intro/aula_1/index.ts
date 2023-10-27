@@ -1,7 +1,7 @@
-const myExpression = 4 * 9 + (120 / 2)
+const myExpression:number = 4 * 9 + (120 / 2)
 
 const resolve = (expression: number) => {
-    console.log(expression) 
+    return expression
 }
 
 resolve(myExpression)
