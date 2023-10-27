@@ -12,7 +12,7 @@ const returnMessage = (message:string) => {
  return message
 }
 
-const message = 'learning typescript'
+const message:string = 'learning typescript'
 
 const newMessage = 'testing typescript'
 
