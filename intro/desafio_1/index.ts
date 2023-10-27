@@ -4,7 +4,7 @@ function sum(numberOne:number,numberTwo:number){
 
 console.log(sum(4,6))
 
-function returnNewMessage(message:string){
+function returnNewMessage(message:string) :string{
     return message
 }
 
