@@ -20,3 +20,12 @@ let annotation: string = "mensagem por type annotation"
 let inference = 'mensagem por inferencia'
 
 console.log(inference + ' ola')
+
+
+let amount: number = 20
+
+let amountString = amount.toString()
+
+let finalMessage = `Pedalei ${amountString}kms até chegar em casa`
+
+console.log(finalMessage)

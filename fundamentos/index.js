@@ -12,3 +12,7 @@ let annotation = "mensagem por type annotation";
 //deixar o tipo da variável subentendido é chamado de type inference
 let inference = 'mensagem por inferencia';
 console.log(inference + ' ola');
+let amount = 20;
+let amountString = amount.toString();
+let finalMessage = `Pedalei ${amountString}kms até chegar em casa`;
+console.log(finalMessage);
