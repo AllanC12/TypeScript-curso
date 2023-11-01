@@ -22,3 +22,14 @@ function sum(a, b) {
     console.log(a + b);
 }
 sum(2, 2);
+//tipos de retorno em funções
+function greeting(name) {
+    return 'olá ' + name;
+}
+console.log(greeting("Allan"));
+//validando funções anônimas
+setTimeout(() => {
+    const money = 1200;
+    // haverá um erro pois parsefloat converte uma string para um float
+    //parseFloat(money)
+}, 2000);
