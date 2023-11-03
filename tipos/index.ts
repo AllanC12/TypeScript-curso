@@ -3,13 +3,13 @@ const names: string[] = ["Allan","João"]
 
 names.push("Alfred")
 
-console.log(names)
+// console.log(names)
 
 const numbers: number[] = [1,2,4,5]
 
 numbers.push(243)
 
-console.log(numbers)
+// console.log(numbers)
 
 //OUTRA SINTAXE
 
@@ -17,13 +17,13 @@ const listItems: Array<string> = ["cola","borracha","sapato"]
 
 listItems.push('mochila')
 
-console.log(listItems)
+// console.log(listItems)
 
 const numberItems: Array<number> = [1,2,4,5,6]
 
 numberItems.push(989)
 
-console.log(numberItems)
+// console.log(numberItems)
 
 
 
@@ -32,13 +32,13 @@ console.log(numberItems)
 
 const arr1: any = [1 ,'text',[],{name: 'Allan'}]
 
-console.log(arr1[3].name)
+// console.log(arr1[3].name)
 
 
 //tipos em parâmetros de funções
 
 function sum(a: number,b: number){
-    console.log(a + b)
+    // console.log(a + b)
 }
 
 sum(2,2)
@@ -49,7 +49,7 @@ function greeting(name:string): string{
     return 'olá ' + name
 }
 
-console.log(greeting("Allan"))
+// console.log(greeting("Allan"))
 
 //validando funções anônimas
 
@@ -58,3 +58,14 @@ setTimeout(() => {
   // haverá um erro pois parsefloat converte uma string para um float
   //parseFloat(money)
 },2000)
+
+//tipos de objetos
+
+const coordinates = (coord: {x:number,y:number}) => {
+  console.log('coordenadas X ' + coord.x)
+  console.log('coordenadas Y ' + coord.y)
+}
+
+coordinates({x: 34343,y:3434908})
+
+
