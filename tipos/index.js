@@ -38,8 +38,17 @@ function coordinates(coord) {
     console.log('COORDINATES X ' + coord.x);
     console.log('COORDINATES Y ' + coord.y);
 }
+//o objeto a ser passado precisa ter as mesmas propriedades do parâmetro
 const objCoordinates = {
     x: 0.20938490,
     y: 123987
 };
 coordinates(objCoordinates);
+//propriedades opcionais
+const showMessage = (message, sizeMessage) => {
+    return "A mensagem: " + message + " possui " + sizeMessage + " letras";
+};
+const message = "O pai de pedro é paulo";
+const messageLenght = message.length;
+console.log(messageLenght);
+console.log(showMessage(message, messageLenght));
