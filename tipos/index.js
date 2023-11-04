@@ -38,4 +38,9 @@ const coordinates = (coord) => {
     console.log('coordenadas X ' + coord.x);
     console.log('coordenadas Y ' + coord.y);
 };
-coordinates({ x: 34343, y: 3434908 });
+// coordinates({x: 34343,y:3434908})
+const objcoordinates = {
+    x: 193409234,
+    y: 932409
+};
+coordinates(objcoordinates);
