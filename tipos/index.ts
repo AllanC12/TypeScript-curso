@@ -58,3 +58,18 @@ setTimeout(() => {
   // haverá um erro pois parsefloat converte uma string para um float
   //parseFloat(money)
 },2000)
+
+//tipándo o objetos
+
+function coordinates (coord: {x: number, y: number}) {
+  console.log('COORDINATES X ' + coord.x)
+  console.log('COORDINATES Y ' + coord.y)
+}
+
+const objCoordinates = {
+  x : 0.20938490,
+  y: 123987
+}
+
+coordinates(objCoordinates)
+
