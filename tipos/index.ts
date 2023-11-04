@@ -84,4 +84,4 @@ const messageLenght:number = message.length
 console.log(messageLenght)
 
 console.log(showMessage(message,messageLenght))
-
+///////////////////////////////////
