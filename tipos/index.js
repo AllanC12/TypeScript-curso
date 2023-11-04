@@ -43,4 +43,5 @@ const objcoordinates = {
     x: 193409234,
     y: 932409
 };
+console.log(coordinates);
 coordinates(objcoordinates);

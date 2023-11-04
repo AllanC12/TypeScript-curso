@@ -73,7 +73,10 @@ const objcoordinates = {
   y: 932409
 }
 
+console.log(coordinates)
+
 coordinates(objcoordinates)
+
 
 
 
