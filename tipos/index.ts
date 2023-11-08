@@ -84,4 +84,16 @@ const messageLenght:number = message.length
 console.log(messageLenght)
 
 console.log(showMessage(message,messageLenght))
+///////////////////////////////////
 
+//podemos validar os parâmetros opcionais para garantir que eles chegaram ou não
+
+const mathOperation = (firstNumber: number, secondNumber: number, thirdNumber?: number) => {
+  if(thirdNumber !== undefined){
+    return firstNumber + secondNumber / thirdNumber
+  }
+
+  return firstNumber * secondNumber
+}
+
+console.log(mathOperation(1,2,3))
