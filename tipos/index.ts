@@ -96,4 +96,5 @@ const mathOperation = (firstNumber: number, secondNumber: number, thirdNumber?: 
   return firstNumber * secondNumber
 }
 
-console.log(mathOperation(1,2,3))
+ console.log(mathOperation (1,2,3))
+  
