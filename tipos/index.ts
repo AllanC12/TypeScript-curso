@@ -87,6 +87,7 @@ console.log(showMessage(message,messageLenght))
 ///////////////////////////////////
 
 //podemos validar os parâmetros opcionais para garantir que eles chegaram ou não
+// o primeiro argumento de uma função nunca pode ser opcional
 
 const mathOperation = (firstNumber: number, secondNumber: number, thirdNumber?: number) => {
   if(thirdNumber !== undefined){
@@ -97,4 +98,26 @@ const mathOperation = (firstNumber: number, secondNumber: number, thirdNumber?: 
 }
 
  console.log(mathOperation (1,2,3))
-  
+
+ // union type. Uma forma de atribuir mais de um tipo a uma variavel.
+
+ const requestInServer = (port: string | number) => {
+    return `connecting on server in port ${port}`;
+ }
+
+ console.log(requestInServer("3000"))
+ 
+ // sintaxe
+ let variable: Array <string | number> = [1, 'mensagem'] 
+
+ //tambem podemos validar os dados que são union types pra tomar uma decisão baseado em cada tipo de dado entrado na função
+
+ function validateRole (userRole: boolean | string) {
+    if(typeof userRole === "boolean"){
+      return "usuário não possui credenciais"
+    }
+
+    return 'função de usuário: Admin'
+ }
+
+ console.log(validateRole("teste"))
