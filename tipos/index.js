@@ -62,7 +62,6 @@ const mathOperation = (firstNumber, secondNumber, thirdNumber) => {
     return firstNumber * secondNumber;
 };
 console.log(mathOperation(1, 2, 3));
-console.log(mathOperation(1, 2, 3));
 // union type. Uma forma de atribuir mais de um tipo a uma variavel.
 const requestInServer = (port) => {
     return `connecting on server in port ${port}`;
@@ -78,3 +77,20 @@ function validateRole(userRole) {
     return 'função de usuário: Admin';
 }
 console.log(validateRole("teste"));
+const showIdUser = (id) => {
+    console.log(`o ID do usuáruio é ${id}`);
+};
+showIdUser('1023941');
+function validateLogin(dataUser) {
+    console.log("Username: " + dataUser.name);
+    console.log("idUser: " + dataUser.id);
+    if (dataUser.authorized) {
+        console.log('acessUser: user accepted');
+    }
+}
+const dataFromLogin = {
+    name: "John",
+    id: 30595,
+    authorized: true
+};
+validateLogin(dataFromLogin);

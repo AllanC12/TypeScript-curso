@@ -121,3 +121,46 @@ const mathOperation = (firstNumber: number, secondNumber: number, thirdNumber?: 
  }
 
  console.log(validateRole("teste"))
+
+ // type alias
+// Existe tambem a possibilidade de resumir expressões, ate mesmo as union types.
+// quando armazenamos essa definição de tipos em uma variável estamos usando o recurso chamado type alias
+
+//desta forma temos a expressão de definição de tipos em uma variavel.
+// então tipamos nosso parâmetro com essa variável
+
+type ID = number | string
+
+const showIdUser = (id: ID) => {
+  console.log(`o ID do usuáruio é ${id}` )
+}
+
+showIdUser('1023941')
+
+// da mesma forma que possuimos o alias para dar nome a tipos e atribui-los a variáveis. 
+// temos as interfaces para dar nome e montar os tipos para objetos.
+
+interface DataLogin {
+  name: string
+  id: number
+  authorized: boolean
+}
+
+function validateLogin(dataUser:DataLogin){
+  console.log("Username: " + dataUser.name)
+  console.log("idUser: " + dataUser.id)
+  if(dataUser.authorized){
+    console.log('acessUser: user accepted') 
+
+  }
+
+}
+
+const dataFromLogin: DataLogin = {
+   name: "John",
+   id: 30595,
+   authorized: true 
+}
+
+validateLogin(dataFromLogin)
+
