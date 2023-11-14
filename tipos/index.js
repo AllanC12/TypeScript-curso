@@ -94,3 +94,9 @@ const dataFromLogin = {
     authorized: true
 };
 validateLogin(dataFromLogin);
+// na implementação da interface , não pode faltar a propriedade age pois se não haverá erros
+const person = {
+    name: 'John',
+    age: 33
+};
+console.log(person);

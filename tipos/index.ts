@@ -164,3 +164,25 @@ const dataFromLogin: DataLogin = {
 
 validateLogin(dataFromLogin)
 
+//interface vs type alias
+
+// o type alias tem o mesmo funcionamento de uma constante, ou seja, seu valor não pode ser alterado. 
+// ja a interface funciona como variável. Na interface podemos fazer alterações
+
+//note que a interface começa com um propriedade do tipo string
+interface Person {
+  name: string
+}
+
+//aqui ela é reescrita e passa a exigir uma propriedade do tipo number
+interface Person {
+  age: number
+}
+
+// na implementação da interface , não pode faltar a propriedade age pois se não haverá erros
+const person: Person = {
+  name: 'John',
+  age: 33
+}
+
+console.log(person)
