@@ -62,7 +62,6 @@ const mathOperation = (firstNumber, secondNumber, thirdNumber) => {
     return firstNumber * secondNumber;
 };
 console.log(mathOperation(1, 2, 3));
-console.log(mathOperation(1, 2, 3));
 // union type. Uma forma de atribuir mais de um tipo a uma variavel.
 const requestInServer = (port) => {
     return `connecting on server in port ${port}`;
