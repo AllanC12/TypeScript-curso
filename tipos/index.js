@@ -2,31 +2,31 @@
 //Arrays
 const names = ["Allan", "João"];
 names.push("Alfred");
-console.log(names);
+// console.log(names)
 const numbers = [1, 2, 4, 5];
 numbers.push(243);
-console.log(numbers);
+// console.log(numbers)
 //OUTRA SINTAXE
 const listItems = ["cola", "borracha", "sapato"];
 listItems.push('mochila');
-console.log(listItems);
+// console.log(listItems)
 const numberItems = [1, 2, 4, 5, 6];
 numberItems.push(989);
-console.log(numberItems);
+// console.log(numberItems)
 //typo any
 //evitar sempre que possível pois anula a tipagem do TS
 const arr1 = [1, 'text', [], { name: 'Allan' }];
-console.log(arr1[3].name);
+// console.log(arr1[3].name)
 //tipos em parâmetros de funções
 function sum(a, b) {
-    console.log(a + b);
+    // console.log(a + b)
 }
 sum(2, 2);
 //tipos de retorno em funções
 function greeting(name) {
     return 'olá ' + name;
 }
-console.log(greeting("Allan"));
+// console.log(greeting("Allan"))
 //validando funções anônimas
 setTimeout(() => {
     const money = 1200;
@@ -35,8 +35,8 @@ setTimeout(() => {
 }, 2000);
 //tipándo o objetos
 function coordinates(coord) {
-    console.log('COORDINATES X ' + coord.x);
-    console.log('COORDINATES Y ' + coord.y);
+    // console.log('COORDINATES X ' + coord.x)
+    // console.log('COORDINATES Y ' + coord.y)
 }
 //o objeto a ser passado precisa ter as mesmas propriedades do parâmetro
 const objCoordinates = {
@@ -50,8 +50,8 @@ const showMessage = (message, sizeMessage) => {
 };
 const message = "O pai de pedro é paulo";
 const messageLenght = message.length;
-console.log(messageLenght);
-console.log(showMessage(message, messageLenght));
+// console.log(messageLenght)
+// console.log(showMessage(message,messageLenght))
 ///////////////////////////////////
 //podemos validar os parâmetros opcionais para garantir que eles chegaram ou não
 // o primeiro argumento de uma função nunca pode ser opcional
@@ -61,12 +61,12 @@ const mathOperation = (firstNumber, secondNumber, thirdNumber) => {
     }
     return firstNumber * secondNumber;
 };
-console.log(mathOperation(1, 2, 3));
+//  console.log(mathOperation (1,2,3))
 // union type. Uma forma de atribuir mais de um tipo a uma variavel.
 const requestInServer = (port) => {
     return `connecting on server in port ${port}`;
 };
-console.log(requestInServer("3000"));
+//  console.log(requestInServer("3000"))
 // sintaxe
 let variable = [1, 'mensagem'];
 //tambem podemos validar os dados que são union types pra tomar uma decisão baseado em cada tipo de dado entrado na função
@@ -76,16 +76,15 @@ function validateRole(userRole) {
     }
     return 'função de usuário: Admin';
 }
-console.log(validateRole("teste"));
 const showIdUser = (id) => {
-    console.log(`o ID do usuáruio é ${id}`);
+    // console.log(`o ID do usuáruio é ${id}` )
 };
 showIdUser('1023941');
 function validateLogin(dataUser) {
-    console.log("Username: " + dataUser.name);
-    console.log("idUser: " + dataUser.id);
+    // console.log("Username: " + dataUser.name)
+    // console.log("idUser: " + dataUser.id)
     if (dataUser.authorized) {
-        console.log('acessUser: user accepted');
+        // console.log('acessUser: user accepted') 
     }
 }
 const dataFromLogin = {
@@ -99,4 +98,19 @@ const person = {
     name: 'John',
     age: 33
 };
-console.log(person);
+// console.log(person)
+//literal types são variáveis que possuem seus valores ja pré-definidos.
+// muito usado em conjunto com os union types
+// pré-definir valores para uma variável pode funcionar como validação
+const showDirection = (direction) => {
+    console.log(`THE CORRECT DIRECTION IS: ${direction}`);
+};
+// showDirection("right")
+//non null assertion operator
+// este operador é usado para quando temos um objeto que o TS identifica como possivelmente null
+// mas sabemos que este objeto existe, para isso precisamos mostrar para o TS que este objeto existe
+// como por exemplo manipulação de DOM
+// utilizamos o ponto de exclamação ! 
+//acessar o texto do elemento pode retornar esse erro 'OBJECT IS POSSIBL NULL
+const paragraph = document.getElementById("some-p");
+console.log(paragraph.innerText);
