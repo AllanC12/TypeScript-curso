@@ -206,5 +206,23 @@ const showDirection = (direction: "right" | "center" | "top") => {
 
 const paragraph = document.getElementById("some-p")
 
-console.log(paragraph!.innerText)
+// console.log(paragraph!.innerText)
+
+//bigint
+// um tipo de dado numérico que não pode ser enquadrado como number
+
+let bignumber: bigint = 112381239123n
+
+// console.log(typeof bignumber)
+
+// na versão es2020 temos tambem o tipo Symbol, este tipo cria uma referencia unica para cada variavel que possui este tipo
+// mesmo se as duas variáveis possuírem valores iguais, elas serão consideradas diferentes pelo javascript
+
+
+let mySymbol: Symbol = Symbol('testando simbolo')
+let otherSymbol: Symbol = Symbol('testando simbolo')
+
+console.log(mySymbol === otherSymbol)
+
+
 
