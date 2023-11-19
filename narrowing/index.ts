@@ -32,5 +32,41 @@ function operation (arr: number[],operation?: string | undefined){
     }
 }
 
-operation([1,2,3],'sum')
-operation([2,4,7],'multiply')
+// operation([1,2,3],'sum')
+// operation([2,4,7],'multiply')
+
+//O operador instanceof server para verificar se tal dado é á instância de tal classe
+
+class User {
+    name 
+    userType
+    constructor(name:String){
+        this.name = name
+        this.userType = "User"
+    }
+}
+
+class SuperUser extends User {
+    userType
+    constructor(name:string){
+      super(name)
+      this.userType = "SuperUser"
+    }
+}
+
+const jhon = new User('John')
+const paul = new SuperUser('Paul')
+
+console.log(jhon)
+console.log(paul)
+
+const greeting = (user: User | SuperUser) => {
+    if(user.userType === 'User'){
+        console.log(`Hello ${user.name}!`)
+     }else if(user.userType === "SuperUser"){
+        console.log(`Hello ${user.name}, desire you see a systems call?`)
+    }
+}
+
+greeting(paul)
+greeting(jhon)

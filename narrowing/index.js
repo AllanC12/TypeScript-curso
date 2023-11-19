@@ -31,5 +31,32 @@ function operation(arr, operation) {
         console.log('Insira uma operação');
     }
 }
-operation([1, 2, 3], 'sum');
-operation([2, 4, 7], 'multiply');
+// operation([1,2,3],'sum')
+// operation([2,4,7],'multiply')
+//O operador instanceof server para verificar se tal dado é á instância de tal classe
+class User {
+    constructor(name) {
+        this.name = name;
+        this.userType = "User";
+    }
+}
+class SuperUser extends User {
+    constructor(name) {
+        super(name);
+        this.userType = "SuperUser";
+    }
+}
+const jhon = new User('John');
+const paul = new SuperUser('Paul');
+console.log(jhon);
+console.log(paul);
+const greeting = (user) => {
+    if (user.userType === 'User') {
+        console.log(`Hello ${user.name}!`);
+    }
+    else if (user.userType === "SuperUser") {
+        console.log(`Hello ${user.name}, desire you see a systems call?`);
+    }
+};
+greeting(paul);
+greeting(jhon);
