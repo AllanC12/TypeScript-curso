@@ -57,8 +57,8 @@ class SuperUser extends User {
 const jhon = new User('John')
 const paul = new SuperUser('Paul')
 
-console.log(jhon)
-console.log(paul)
+// console.log(jhon)
+// console.log(paul)
 
 const greeting = (user: User | SuperUser) => {
     if(user.userType === 'User'){
@@ -68,5 +68,34 @@ const greeting = (user: User | SuperUser) => {
     }
 }
 
-greeting(paul)
-greeting(jhon)
+// greeting(paul)
+// greeting(jhon)
+
+
+class Dog {
+    name 
+    breed
+
+    constructor(name: string, breed?: string){
+        this.name = name
+
+        if(breed){
+            this.breed = breed
+        }
+    }
+}
+
+
+const jake = new Dog("Jake","Husky siberiano")
+const tonky = new Dog("Tonky")
+
+const showDogDetails = (dog: Dog) => {
+   if("breed" in dog){
+     console.log(`O cachorro é da raça ${dog.breed}`)
+   }else{
+    console.log("O cachorro não possui uma raça definida")
+   }
+}
+
+showDogDetails(jake)
+showDogDetails(tonky)
