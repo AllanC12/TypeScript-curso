@@ -78,5 +78,30 @@ const showDogDetails = (dog) => {
         console.log("O cachorro não possui uma raça definida");
     }
 };
-showDogDetails(jake);
-showDogDetails(tonky);
+// showDogDetails(jake)
+// showDogDetails(tonky)
+const feedbackUser = (feedback) => {
+    if (feedback) {
+        switch (feedback) {
+            case 1:
+                console.log('Nota 1 enviada pelo usuário');
+                break;
+            case 2:
+                console.log("Nota 2 enviada pelo usuário");
+                break;
+            case 3:
+                console.log("Nota 3 enviada pelo usuário");
+                break;
+            case 4:
+                console.log("Nota 4 enviada pelo usuário");
+                break;
+            case 5:
+                console.log("Nota 5 enviada pelo usuário");
+                break;
+        }
+    }
+    else {
+        console.log("Feedback não enviado");
+    }
+};
+feedbackUser();
