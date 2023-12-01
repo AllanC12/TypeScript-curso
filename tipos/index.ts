@@ -122,7 +122,7 @@ const mathOperation = (firstNumber: number, secondNumber: number, thirdNumber?: 
 
 //  console.log(validateRole("teste"))
 
- // type alias
+// type alias
 // Existe tambem a possibilidade de resumir expressões, ate mesmo as union types.
 // quando armazenamos essa definição de tipos em uma variável estamos usando o recurso chamado type alias
 
