@@ -20,6 +20,8 @@ console.log(preGreeting(greeting, "Allan"));
 // 3 - Generic functions
 // O generic é uma forma de aplicarmos tipagem a um dado que não sabemos exatamente como vai chegar
 // por convenção são usadas as letras T e U para demonstrarem o uso de um generic
+// na função abaixo, entende-se que será retornado uma array. mas não sabemos de que exatamente esse array será constituido. 
+// por isso usamos o generic para deixatmos os tipos de dados desse array mais flexível
 function showFirstElement(arr) {
     return arr[0];
 }
@@ -35,7 +37,7 @@ const mergedObject = mergeObjects({ name: "Allan" }, { job: "Programmer" });
 console.log(mergedObject);
 // 3 -  constraints
 // em generic functions podemos tambem aplicar o conceito de constraints , o que significa limitar o escopo dos tipos aceitos nos generics
-//OBS: note que nesta função ha a declaração de apenas um generic aceitando dois tipos e a passagem de dois argumentos aceitando apenas um generic
+//OBS: note que nesta função há a declaração de apenas um generic aceitando dois tipos e a passagem de dois argumentos aceitando apenas um generic
 //isso nos limita passar os dois argumentos com o mesmo tipo. Isso seria diferente caso tivéssemos dois generics sendo declarados
 const biggestNumber = (a, b) => {
     let biggest;
@@ -49,3 +51,11 @@ const biggestNumber = (a, b) => {
 };
 console.log(biggestNumber(4, 9));
 console.log(biggestNumber(3, 30983223));
+// 3 - Especificar os tipos de parâmetros dos generics
+// note que com apenas a definição de apenas um generic em dois argumentos , os tipos destes argumentos precisam ser iguais
+// mas podemos especificar os tipos destes generics na hora da chamada da função
+function mergeArrays(arr1, arr2) {
+    return arr1.concat(arr2);
+}
+console.log(mergeArrays([1, 2, 3], [4, 5, 6]));
+console.log(mergeArrays([1, 2, 3], ["teste", "testando"]));
