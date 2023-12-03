@@ -53,7 +53,7 @@ const mergedObject = mergeObjects({name: "Allan"},{job: "Programmer"})
 console.log(mergedObject)
 
 
-// 3 -  constraints
+// 4 -  constraints
 // em generic functions podemos tambem aplicar o conceito de constraints , o que significa limitar o escopo dos tipos aceitos nos generics
 
 //OBS: note que nesta função há a declaração de apenas um generic aceitando dois tipos e a passagem de dois argumentos aceitando apenas um generic
@@ -75,7 +75,7 @@ const biggestNumber =<T extends number | string> (a: T, b: T): T => {
 console.log(biggestNumber(4,9))
 console.log(biggestNumber(3,30983223))
 
-// 3 - Especificar os tipos de parâmetros dos generics
+// 5 - Especificar os tipos de parâmetros dos generics
 
 // note que com apenas a definição de apenas um generic em dois argumentos , os tipos destes argumentos precisam ser iguais
 // mas podemos especificar os tipos destes generics na hora da chamada da função
@@ -86,3 +86,24 @@ function mergeArrays<T>(arr1: T[], arr2: T[]): T[] {
 
 console.log(mergeArrays([1,2,3],[4,5,6]))
 console.log(mergeArrays<string | number>([1,2,3],["teste","testando"]))
+
+
+ // 6 - revisão de parametros opcionais
+
+ function resolveEquation(num1: number, num2: number, num3?: number): number{
+    if(num3){
+        return (num1 + num2) / num3
+    }
+
+    return num1 + num2
+ }
+
+ console.log(resolveEquation(23,23,2))
+
+ // 7 - parâmetros com valores default
+
+ function sumNumbers(numb1: number,numb2 = 25): number{
+    return numb1 + numb2
+ }
+
+ console.log(sumNumbers(34,12))
