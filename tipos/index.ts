@@ -239,5 +239,37 @@ function doSomething(x: unknown) {
 
 doSomething([0.3,0,4,0,1,3])
 
+// tipo de retorno: Never
+// semelhante ao tipo void , mais utilizado em caso de exibição de erros
 
 
+function showError(msg: string){
+  throw new Error(msg);
+  
+}
+
+// showError("Algum erro")
+
+
+// Rest parameter em TS
+// para utilizarmos o rest operator em TS basta tiparmos o próprio rest
+
+function sumAllNumbers(...numbers: number[]){
+  return numbers.reduce((acc,number) => acc + number)
+}
+
+console.log(sumAllNumbers(4,5,9))
+
+// destructuring --> este segue a mesma lógica do rest operator , a mesma sintaxe , apenas tipamos o que está sendo desestruturado
+
+const showDetailsProduct = ({name,price} : {name: string, price: number}) => {
+  console.log(`Nome do produto: ${name}`)
+  console.log(`Preço do produto: R$${price}`)
+}
+
+const computer = {
+     name: "Computador",
+     price: 3599.99
+}
+
+showDetailsProduct(computer)
