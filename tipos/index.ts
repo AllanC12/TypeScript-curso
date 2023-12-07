@@ -224,5 +224,20 @@ let otherSymbol: Symbol = Symbol('testando simbolo')
 
 console.log(mySymbol === otherSymbol)
 
+// unknown
+// O tipo unknown é semelhante ao tipo any , porem para manipularmos esse tipo dentro da função
+// é necessário que realizemos uma validação ou narrowing para verificar o tipo de dado na função
+
+
+function doSomething(x: unknown) {
+  if(Array.isArray(x)){
+    console.log(x[0])
+  }
+
+  // console.log(x[0])  não podemos simplesmente acessar o valor
+}
+
+doSomething([0.3,0,4,0,1,3])
+
 
 
