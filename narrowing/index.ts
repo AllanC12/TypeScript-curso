@@ -16,6 +16,9 @@ function sumNumber(a: number | string, b: number | string) {
 // sumNumber('12','123')
 // sumNumber('23123',12312)
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 // checando se valor existe
 
 function operation (arr: number[],operation?: string | undefined){
@@ -35,7 +38,6 @@ function operation (arr: number[],operation?: string | undefined){
 // operation([1,2,3],'sum')
 // operation([2,4,7],'multiply')
 
-//O operador instanceof server para verificar se tal dado é á instância de tal classe
 
 class User {
     name 
@@ -72,6 +74,9 @@ const greeting = (user: User | SuperUser) => {
 // greeting(jhon)
 
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 class Dog {
     name 
     breed
@@ -100,6 +105,7 @@ const showDogDetails = (dog: Dog) => {
 // showDogDetails(jake)
 // showDogDetails(tonky)
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 const feedbackUser = (feedback?: number) => {
