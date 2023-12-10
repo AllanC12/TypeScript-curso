@@ -12,3 +12,20 @@ function showMessage(arg) {
     return `O argumento é: ${arg}`;
 }
 console.log(showMessage(3));
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+// Constraints em Generics
+// As constraints nos ajudam a limitar os tipos aceitos
+// Como em genenric podemos ter tipos livres, elas vão filtrar os tipos aceitos
+// Adicionando organização quando queremos aproveitar a liberdade dos generics
+//nesse cenário, o objeto a ser passado na função, precisa obrigatoriamente possuir uma proprieade name
+const showProduct = (obj) => {
+    return `O nome do produto é: ${obj.name}`;
+};
+const car = {
+    name: "Lancer"
+};
+// const price = {
+//   price: 1231
+// }
+console.log(showProduct(car));
+// console.log(showProduct(price))
