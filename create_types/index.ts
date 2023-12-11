@@ -40,3 +40,65 @@ const car = {
 
 console.log(showProduct(car))
 // console.log(showProduct(price))
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Interfaces com Generics
+// com interfaces podemos criar tipos mais complexos para objetos, adicionando Generics podemos deixá-los mais brandos
+// aceitando tipos diferentes em ocasiões diferentes
+
+// A lógica é a mesma. Imagine uma situação em que você possui uma interface mas você ainda não sabe o tipo de algumas de suas chaves 
+
+interface Person<T,U> {
+  name: string,
+  age: T,
+  weight: U,
+  hability?: string
+}
+
+// neste cenário , podemos definir o tipo dos generics na hora da implementação da interface ou ate mesmo criarmos um tipo a usando e definindo os tipos dos generics
+
+type SuperHuman = Person<number,number> 
+
+const flash: SuperHuman = {
+  name: "Barry Alen",
+  age: 29,
+  weight: 90,
+  // hability: "Super velocidade"
+
+}
+
+const Allan : Person<number,number> = {
+  name: "Allan",
+  age: 23,
+  weight: 85
+}
+
+// console.log(Allan)
+// console.log(flash)
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Type Parameters
+// Type parameters é um recurso de Generics
+// Utilizado apra dizer que alguma parâmetro de uma função por exemplo é a chave de um objeto, que também é parâmetro
+// Desta maneira conseguimos criar uma ligação entre o tipo genérico e sua chave
+// Para isso usamos o operador keyof 
+
+interface Server {
+  port: number,
+  ip: string
+}
+
+function showSomeKey<T, K extends keyof T>(obj: T,key: K){
+  return `A chave de ${key.toString()} é ${obj[key]}`
+}
+
+const server: Server = {
+   port: 12312,
+   ip: '127.0.0.1'
+}
+
+console.log(showSomeKey(server,'ip'))
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------

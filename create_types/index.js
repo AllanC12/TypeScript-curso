@@ -28,4 +28,23 @@ const car = {
 //   price: 1231
 // }
 console.log(showProduct(car));
-// console.log(showProduct(price))
+const flash = {
+    name: "Barry Alen",
+    age: 29,
+    weight: 90,
+    // hability: "Super velocidade"
+};
+const Allan = {
+    name: "Allan",
+    age: 23,
+    weight: 85
+};
+function showSomeKey(obj, key) {
+    return `A chave de ${key.toString()} é ${obj[key]}`;
+}
+const server = {
+    port: 12312,
+    ip: '127.0.0.1'
+};
+console.log(showSomeKey(server, 'ip'));
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
