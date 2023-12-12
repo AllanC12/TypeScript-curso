@@ -11,7 +11,7 @@
 function showMessage(arg) {
     return `O argumento é: ${arg}`;
 }
-console.log(showMessage(3));
+// console.log(showMessage(3))
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 // Constraints em Generics
 // As constraints nos ajudam a limitar os tipos aceitos
@@ -24,10 +24,6 @@ const showProduct = (obj) => {
 const car = {
     name: "Lancer"
 };
-// const price = {
-//   price: 1231
-// }
-console.log(showProduct(car));
 const flash = {
     name: "Barry Alen",
     age: 29,
@@ -46,5 +42,21 @@ const server = {
     port: 12312,
     ip: '127.0.0.1'
 };
-console.log(showSomeKey(server, 'ip'));
+function returnKeyOfObject(obj, key) {
+    return `${obj[key]}`;
+}
+const person = {
+    name: "Allan",
+    age: 23,
+    hasDriveLicense: false
+};
+// console.log(returnKeyOfObject(person, 'name'))
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
+// Typeof type operator
+// Com o typeof type operator podemos criar um novo tipo
+// Este tipo será baseado no tipo de algum dado
+// Ou seja , é interessabte para quando queremos criar uma variável com o mesmo tipo da outra por exemplo
+const userName = "Aurélio";
+const userRegistered = "Adilson";
+// const userRegistered2: typeof userName = "Adilson"
+console.log(userRegistered);

@@ -15,7 +15,7 @@ function showMessage<T>(arg: T): string{
   return `O argumento é: ${arg}`
 }
 
-console.log(showMessage(3))
+// console.log(showMessage(3))
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -38,7 +38,7 @@ const car = {
 //   price: 1231
 // }
 
-console.log(showProduct(car))
+// console.log(showProduct(car))
 // console.log(showProduct(price))
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
@@ -99,6 +99,46 @@ const server: Server = {
    ip: '127.0.0.1'
 }
 
-console.log(showSomeKey(server,'ip'))
+// console.log(showSomeKey(server,'ip'))
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// keyof Type Operator
+
+// Com o keyof Type Operator podemos criar um novo tipo
+// Ele aceita dados do tipo objeto , como object literals e arrays
+// e pode criar o tipo baseado nas chaves do objeto passado como parâmetro
+
+interface Character {name: string, age: number, hasDriveLicense: boolean}
+
+//qualquer parâmetro que receber C como tipo precisa obrigatoriamente receber uma chave da interface Character como valor a ser passado
+type C = keyof Character
+
+function returnKeyOfObject(obj: Character, key: C) {
+  return `${obj[key]}`
+}
+
+const person: Character = {
+  name: "Allan",
+  age: 23,
+  hasDriveLicense: false
+}
+
+// console.log(returnKeyOfObject(person, 'name'))
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Typeof type operator
+
+// Com o typeof type operator podemos criar um novo tipo
+// Este tipo será baseado no tipo de algum dado
+// Ou seja , é interessabte para quando queremos criar uma variável com o mesmo tipo da outra por exemplo
+
+const userName: string = "Aurélio"
+
+type userNameType = typeof userName
+
+const userRegistered: userNameType = "Adilson"
+// const userRegistered2: typeof userName = "Adilson"
+
+console.log(userRegistered)
