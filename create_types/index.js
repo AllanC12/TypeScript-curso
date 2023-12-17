@@ -60,3 +60,11 @@ const userName = "Aurélio";
 const userRegistered = "Adilson";
 // const userRegistered2: typeof userName = "Adilson"
 console.log(userRegistered);
+const earth = {
+    diameter: 12000,
+    description: 'Planeta composto por mais de 70% de água'
+};
+const showDetails = (sizePlanet) => {
+    return `O  diâmetro do planeta Terra é ${sizePlanet} km`;
+};
+console.log(showDetails(earth.diameter));

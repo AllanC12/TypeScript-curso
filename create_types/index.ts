@@ -142,3 +142,31 @@ const userRegistered: userNameType = "Adilson"
 // const userRegistered2: typeof userName = "Adilson"
 
 console.log(userRegistered)
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Indexed acess type
+
+// A abordagem Indexed acess types pode criar um tipo baseado em uma chave de obejeto
+// Ou seja , conseguimos reaproveitar o tipo da chave para outros locais como funções
+
+
+interface Planet {
+  diameter: number,
+  description: string
+}
+
+
+const earth: Planet = {
+  diameter: 12000,
+  description: 'Planeta composto por mais de 70% de água'
+}
+
+type Size = Planet["diameter"]
+
+const showDetails = (sizePlanet: Size) => {
+   return `O  diâmetro do planeta Terra é ${sizePlanet} km`
+}
+
+console.log(showDetails(earth.diameter))
