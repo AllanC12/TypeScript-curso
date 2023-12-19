@@ -25,6 +25,7 @@ numberItems.push(989)
 
 // console.log(numberItems)
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 //typo any
@@ -34,6 +35,8 @@ const arr1: any = [1 ,'text',[],{name: 'Allan'}]
 
 // console.log(arr1[3].name)
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 //tipos em parâmetros de funções
 
@@ -42,6 +45,8 @@ function sum(a: number,b: number){
 }
 
 sum(2,2)
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 //tipos de retorno em funções
 
@@ -51,6 +56,9 @@ function greeting(name:string): string{
 
 // console.log(greeting("Allan"))
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 //validando funções anônimas
 
 setTimeout(() => {
@@ -59,7 +67,10 @@ setTimeout(() => {
   //parseFloat(money)
 },2000)
 
-//tipándo o objetos
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+//tipando o objetos
 
 function coordinates (coord: {x: number, y: number}) {
   // console.log('COORDINATES X ' + coord.x)
@@ -74,6 +85,9 @@ const objCoordinates = {
 
 coordinates(objCoordinates)
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 //propriedades opcionais
 const showMessage = (message: string, sizeMessage: number) => {
   return "A mensagem: " + message +  " possui " + sizeMessage + " letras"
@@ -84,7 +98,9 @@ const messageLenght:number = message.length
 // console.log(messageLenght)
 
 // console.log(showMessage(message,messageLenght))
-///////////////////////////////////
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 //podemos validar os parâmetros opcionais para garantir que eles chegaram ou não
 // o primeiro argumento de uma função nunca pode ser opcional
@@ -99,6 +115,9 @@ const mathOperation = (firstNumber: number, secondNumber: number, thirdNumber?: 
 
 //  console.log(mathOperation (1,2,3))
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
  // union type. Uma forma de atribuir mais de um tipo a uma variavel.
 
  const requestInServer = (port: string | number) => {
@@ -106,6 +125,9 @@ const mathOperation = (firstNumber: number, secondNumber: number, thirdNumber?: 
  }
 
 //  console.log(requestInServer("3000"))
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
  
  // sintaxe
  let variable: Array <string | number> = [1, 'mensagem'] 
@@ -122,6 +144,9 @@ const mathOperation = (firstNumber: number, secondNumber: number, thirdNumber?: 
 
 //  console.log(validateRole("teste"))
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 // type alias
 // Existe tambem a possibilidade de resumir expressões, ate mesmo as union types.
 // quando armazenamos essa definição de tipos em uma variável estamos usando o recurso chamado type alias
@@ -136,6 +161,9 @@ const showIdUser = (id: ID) => {
 }
 
 showIdUser('1023941')
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 // da mesma forma que possuimos o alias para dar nome a tipos e atribui-los a variáveis. 
 // temos as interfaces para dar nome e montar os tipos para objetos.
@@ -164,6 +192,9 @@ const dataFromLogin: DataLogin = {
 
 validateLogin(dataFromLogin)
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 //interface vs type alias
 
 // o type alias tem o mesmo funcionamento de uma constante, ou seja, seu valor não pode ser alterado. 
@@ -187,6 +218,9 @@ const person: Person = {
 
 // console.log(person)
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 //literal types são variáveis que possuem seus valores ja pré-definidos.
 // muito usado em conjunto com os union types
 // pré-definir valores para uma variável pode funcionar como validação
@@ -197,7 +231,11 @@ const showDirection = (direction: "right" | "center" | "top") => {
 
 // showDirection("right")
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 //non null assertion operator
+
 // este operador é usado para quando temos um objeto que o TS identifica como possivelmente null
 // mas sabemos que este objeto existe, para isso precisamos mostrar para o TS que este objeto existe
 // como por exemplo manipulação de DOM
@@ -208,12 +246,18 @@ const paragraph = document.getElementById("some-p")
 
 // console.log(paragraph!.innerText)
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 //bigint
 // um tipo de dado numérico que não pode ser enquadrado como number
 
 let bignumber: bigint = 112381239123n
 
 // console.log(typeof bignumber)
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 // na versão es2020 temos tambem o tipo Symbol, este tipo cria uma referencia unica para cada variavel que possui este tipo
 // mesmo se as duas variáveis possuírem valores iguais, elas serão consideradas diferentes pelo javascript
@@ -223,6 +267,9 @@ let mySymbol: Symbol = Symbol('testando simbolo')
 let otherSymbol: Symbol = Symbol('testando simbolo')
 
 console.log(mySymbol === otherSymbol)
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 // unknown
 // O tipo unknown é semelhante ao tipo any , porem para manipularmos esse tipo dentro da função
@@ -239,16 +286,22 @@ function doSomething(x: unknown) {
 
 doSomething([0.3,0,4,0,1,3])
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 // tipo de retorno: Never
 // semelhante ao tipo void , mais utilizado em caso de exibição de erros
 
 
-function showError(msg: string){
+function showError(msg: string):never{
   throw new Error(msg);
   
 }
 
 // showError("Algum erro")
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 // Rest parameter em TS
@@ -259,6 +312,9 @@ function sumAllNumbers(...numbers: number[]){
 }
 
 console.log(sumAllNumbers(4,5,9))
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 // destructuring --> este segue a mesma lógica do rest operator , a mesma sintaxe , apenas tipamos o que está sendo desestruturado
 

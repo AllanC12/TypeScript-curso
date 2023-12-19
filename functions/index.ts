@@ -9,6 +9,9 @@ function showModal () : void{
 }
 showModal()
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 // 2 - callback como argumento
 // existe a possibilidade de passarmos callbacks para as nossas funções e definirmos tambem os tipos de retorno para essas funções
 
@@ -23,6 +26,9 @@ function preGreeting(callFunction: (name: string) => string, userName: string){
 }
 
 console.log(preGreeting(greeting,"Allan"))
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 // 3 - Generic functions
@@ -39,6 +45,9 @@ function showFirstElement<T>(arr: T[]): T {
 
 console.log(showFirstElement([1,2,3]))
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 //Existe a possibilidade tambem da junção de itens que são do tipo generics e de union types com generics
 
 function mergeObjects<T , U>(obj1: T, obj2: U): T | U{
@@ -51,6 +60,9 @@ function mergeObjects<T , U>(obj1: T, obj2: U): T | U{
 const mergedObject = mergeObjects({name: "Allan"},{job: "Programmer"})
 
 console.log(mergedObject)
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 // 4 -  constraints
@@ -75,6 +87,9 @@ const biggestNumber =<T extends number | string> (a: T, b: T): T => {
 console.log(biggestNumber(4,9))
 console.log(biggestNumber(3,30983223))
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 // 5 - Especificar os tipos de parâmetros dos generics
 
 // note que com apenas a definição de apenas um generic em dois argumentos , os tipos destes argumentos precisam ser iguais
@@ -86,6 +101,9 @@ function mergeArrays<T>(arr1: T[], arr2: T[]): T[] {
 
 console.log(mergeArrays([1,2,3],[4,5,6]))
 console.log(mergeArrays<string | number>([1,2,3],["teste","testando"]))
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
  // 6 - revisão de parametros opcionais
@@ -99,6 +117,9 @@ console.log(mergeArrays<string | number>([1,2,3],["teste","testando"]))
  }
 
  console.log(resolveEquation(23,23,2))
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
 
  // 7 - parâmetros com valores default
 
