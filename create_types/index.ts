@@ -170,3 +170,29 @@ const showDetails = (sizePlanet: Size) => {
 }
 
 console.log(showDetails(earth.diameter))
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Conditional Expression type 
+
+// O tipo por condição permite criar um tipo com a base em um if else
+// Mas não aceitas expressões tão amplas
+// Utilizamos a sintaxe de if ternário
+
+// Imagine a situação em que o tipo da variável necessita de uma verificação
+
+
+interface A {
+
+}
+
+interface B extends A {
+
+}
+
+
+type MyType = B extends A ? number : string
+
+
+const someVar: MyType = 25

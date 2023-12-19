@@ -68,3 +68,4 @@ const showDetails = (sizePlanet) => {
     return `O  diâmetro do planeta Terra é ${sizePlanet} km`;
 };
 console.log(showDetails(earth.diameter));
+const someVar = 25;
