@@ -69,3 +69,4 @@ const showDetails = (sizePlanet) => {
 };
 console.log(showDetails(earth.diameter));
 const someVar = 25;
+const typeCustomized = 'myType';

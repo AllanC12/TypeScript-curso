@@ -196,3 +196,17 @@ type MyType = B extends A ? number : string
 
 
 const someVar: MyType = 25
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Template Literals Type
+// Podemos criar tipos com Template Literals
+// É uma forma de customizar tipos de maneiras infinitas
+
+type TypeA = "myType"
+type CustomType = `this is ${TypeA}`
+type TypeUnions = TypeA | CustomType
+
+const typeCustomized: TypeUnions = 'myType'
+
