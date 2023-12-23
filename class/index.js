@@ -74,3 +74,21 @@ class Character {
 const Doctor = new Character("Doctor");
 console.log(Doctor);
 Doctor.greeting();
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+// O uso da palavra this 
+// A palavra reservada this serve para nos referirmos ao objeto em si
+// Ou seja conseguimos acessar suas propriedades
+// Esta funcionaliodade se comporta da mesma forma que em Javascript
+class Truck {
+    constructor(name, hp) {
+        this.name = name;
+        this.hp = hp;
+    }
+    showDetails() {
+        console.log(`Marca ${this.name} contendo HP: ${this.hp}`);
+    }
+}
+const truck = new Truck("volvo", 500);
+console.table(truck);
+truck.showDetails();
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
