@@ -76,8 +76,10 @@ console.log(lancer)
 
 class Machine {
   name
-  constructor (name: string){
+  size
+  constructor (name: string ){
     this.name = name
+    this.size = 23
   }
 }
 
@@ -96,4 +98,124 @@ class DoctorMachine extends Machine {
 const TheMoment = new DoctorMachine("The Moment",1)
 
 console.log(TheMoment)
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Métodos
+// Métodos são como funções das classes
+// Podemos criá-los junto de classes e os objetos podem utilizá-los
+// É uma maneira de adicionar funcionalidades as classes
+
+class Character {
+  name
+  constructor(name: string){
+    this.name = name
+  }
+
+  greeting () {
+    console.log(`Hi, I am the ${this.name}`)
+  }
+}
+
+const Doctor = new Character("Doctor")
+
+console.log(Doctor)
+
+Doctor.greeting()
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// O uso da palavra this 
+// A palavra reservada this serve para nos referirmos ao objeto em si
+// Ou seja conseguimos acessar suas propriedades
+// Esta funcionaliodade se comporta da mesma forma que em Javascript
+
+class Truck {
+   name
+   hp
+   constructor(name: string,hp: number){
+     this.name = name
+     this.hp = hp
+   }
+
+    showDetails () {
+     console.log(`Marca ${this.name} contendo HP: ${this.hp}`)
+   }
+}
+
+const truck = new Truck("volvo",500)
+
+console.table(truck)
+
+truck.showDetails()
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Utilizando getters
+// Os getters são uma forma de retornar propriedades do objeto
+// Porém podemoes modificá-las neste retorno, isso é muito interessante
+// Ou seja, é um método pra ler propriedades
+// Os getters precisam obrigatoriamente retornar valores e os chamamamos como se fossem propriedades
+// Ou seja, não usamos os parentes convencionais como nas funções ()
+
+class HandleNumbers {
+  initial
+  second
+  constructor(initial: number,second: number){
+    this.initial = initial
+    this.second = second
+
+  }
+
+  get sumNumbers(): number {
+    return this.initial + this.second
+  }
+}
+
+
+const manipulateNumbers = new HandleNumbers(2,4)
+
+console.log(manipulateNumbers.sumNumbers)
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Utilizando setters
+// Os getters leem propriedades , os setters as modificam/atribuem
+// Logo podemos fazer validações antes de inserir uma propriedade
+// Os setters tambem funcionam como métodos
+// Note que a sintaxe para chamar os setters e passar os valores pros parâmetros é feito através de atribuição
+
+class Coords {
+
+  x!: number
+  y!: number
+
+  set fillX(x: number){
+    if(x === 0) return
+
+    this.x = x
+  }
+  set fillY(y: number){
+    if(y === 0) return
+
+    this.y = y
+  }
+
+  get showCoords(): string {
+    return `Coord X: ${this.x} 
+Coord Y: ${this.y}`
+  }
+
+}
+
+const coords = new Coords()
+
+coords.fillX = 21312
+coords.fillY = 11231
+
+console.log(coords.showCoords)
+
+
 
