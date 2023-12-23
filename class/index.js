@@ -45,6 +45,7 @@ console.log(lancer);
 class Machine {
     constructor(name) {
         this.name = name;
+        this.size = 23;
     }
 }
 const trator = new Machine("Trator");
@@ -57,3 +58,19 @@ class DoctorMachine extends Machine {
 }
 const TheMoment = new DoctorMachine("The Moment", 1);
 console.log(TheMoment);
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+// Métodos
+// Métodos são como funções das classes
+// Podemos criá-los junto de classes e os objetos podem utilizá-los
+// É uma maneira de adicionar funcionalidades as classes
+class Character {
+    constructor(name) {
+        this.name = name;
+    }
+    greeting() {
+        console.log(`Hi, I am the ${this.name}`);
+    }
+}
+const Doctor = new Character("Doctor");
+console.log(Doctor);
+Doctor.greeting();
