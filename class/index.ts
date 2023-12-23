@@ -153,5 +153,30 @@ truck.showDetails()
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 
+// Utilizando getters
+// Os getters são uma forma de retornar propriedades do objeto
+// Porém podemoes modificá-las neste retorno, isso é muito interessante
+// Ou seja, é um método pra ler propriedades
+// Os getters precisam obrigatoriamente retornar valores e os chamamamos como se fossem propriedades
+// Ou seja, não usamos os parentes convencionais como nas funções ()
+
+class HandleNumbers {
+  initial
+  second
+  constructor(initial: number,second: number){
+    this.initial = initial
+    this.second = second
+
+  }
+
+  get sumNumbers(): number {
+    return this.initial + this.second
+  }
+}
+
+
+const manipulateNumbers = new HandleNumbers(2,4)
+
+console.log(manipulateNumbers.sumNumbers)
 
 
