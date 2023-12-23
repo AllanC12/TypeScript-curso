@@ -109,3 +109,29 @@ class HandleNumbers {
 }
 const manipulateNumbers = new HandleNumbers(2, 4);
 console.log(manipulateNumbers.sumNumbers);
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+// Utilizando setters
+// Os getters leem propriedades , os setters as modificam/atribuem
+// Logo podemos fazer validações antes de inserir uma propriedade
+// Os setters tambem funcionam como métodos
+// Note que a sintaxe para chamar os setters e passar os valores pros parâmetros é feito através de atribuição
+class Coords {
+    set fillX(x) {
+        if (x === 0)
+            return;
+        this.x = x;
+    }
+    set fillY(y) {
+        if (y === 0)
+            return;
+        this.y = y;
+    }
+    get showCoords() {
+        return `Coord X: ${this.x} 
+Coord Y: ${this.y}`;
+    }
+}
+const coords = new Coords();
+coords.fillX = 21312;
+coords.fillY = 11231;
+console.log(coords.showCoords);
