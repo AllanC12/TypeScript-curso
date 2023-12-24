@@ -271,3 +271,65 @@ const myClass = new NewBase()
 
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Visibilidade
+// Visibilidade é o conceito de expor nossos métodos de classes
+// Public: visivbilidade default, pode ser acessado em qualquer lugar
+// Protected: acessível somente nas sublclasses da classe do método , para acessar uma propriedade precisamos de um método
+// Private: apenas a classe que declarou o método pode utilizar
+
+// Visibilidade: public
+// o public é o modo default de visibilidade
+// Ou seja , ja está implícito e nao precisamos declarar
+// Basicamente qualquer método ou propriedade de classe pai estará acessível na classe filha
+
+class DadClass {
+  public property = 10
+}
+
+const dadClass = new DadClass()
+
+console.log(dadClass.property)
+
+class SonClass extends DadClass {
+   
+}
+
+const sonClass = new SonClass()
+
+console.log(sonClass.property)
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Visibilidade: protected
+// Os itens protected podem ser utilizados apenas em subclasses
+// Uma propriedade só pode ser acessada por um método, por exemplo:
+// O mesmo acontece com métodos
+// Adicionando uma camada de segurança ao código em uma classe
+
+
+class A {
+  protected property = 12312
+  
+ protected divideProperty(): number {
+   return this.property / 2
+ }
+
+}
+
+
+class B extends A {
+   showProtectedProperty () {
+     console.log(this.property)
+   }
+
+   calculateDivision() {
+     // métodos protected tamberm precisam ser repassados para métodos dentro das subclasses
+     return this.divideProperty()
+   }
+}
+
+const bInstance = new B()
+
+ console.log(bInstance.calculateDivision())
+
