@@ -10,7 +10,7 @@ class User {
 const Allan = new User();
 Allan.name = "Allan";
 Allan.age = 23;
-console.log(Allan);
+// console.log(Allan)
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 // Constructor
 // Constructor é uma função que nos da a possibilidade de iniciar o objeto com valores nos seus campos
@@ -23,7 +23,7 @@ class NewUser {
     }
 }
 const John = new NewUser("John Smith", 35);
-console.log(John);
+// console.log(John)
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 // campo readonly
 // Podemos iniciar o campo com valor e torná-lo readonly
@@ -36,7 +36,7 @@ class Car {
     }
 }
 const lancer = new Car("Lancer Evo X");
-console.log(lancer);
+// console.log(lancer)
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 // Herança e super
 // Para gerar uma herança utilizamos a palavra reservada extends
@@ -49,7 +49,7 @@ class Machine {
     }
 }
 const trator = new Machine("Trator");
-console.log(trator);
+// console.log(trator)
 class DoctorMachine extends Machine {
     constructor(name, guns) {
         super(name);
@@ -57,7 +57,7 @@ class DoctorMachine extends Machine {
     }
 }
 const TheMoment = new DoctorMachine("The Moment", 1);
-console.log(TheMoment);
+// console.log(TheMoment)
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 // Métodos
 // Métodos são como funções das classes
@@ -68,11 +68,11 @@ class Character {
         this.name = name;
     }
     greeting() {
-        console.log(`Hi, I am the ${this.name}`);
+        // console.log(`Hi, I am the ${this.name}`)
     }
 }
 const Doctor = new Character("Doctor");
-console.log(Doctor);
+// console.log(Doctor)
 Doctor.greeting();
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 // O uso da palavra this 
@@ -89,8 +89,8 @@ class Truck {
     }
 }
 const truck = new Truck("volvo", 500);
-console.table(truck);
-truck.showDetails();
+// console.table(truck)
+// truck.showDetails()
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 // Utilizando getters
 // Os getters são uma forma de retornar propriedades do objeto
@@ -108,7 +108,7 @@ class HandleNumbers {
     }
 }
 const manipulateNumbers = new HandleNumbers(2, 4);
-console.log(manipulateNumbers.sumNumbers);
+// console.log(manipulateNumbers.sumNumbers)
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 // Utilizando setters
 // Os getters leem propriedades , os setters as modificam/atribuem
@@ -134,4 +134,32 @@ Coord Y: ${this.y}`;
 const coords = new Coords();
 coords.fillX = 21312;
 coords.fillY = 11231;
-console.log(coords.showCoords);
+class HandleTitle {
+    constructor(title) {
+        this.title = title;
+    }
+    showTitle() {
+        return `meu título de blog é "${this.title}"`;
+    }
+}
+const blog = new HandleTitle("Blog noturno");
+// console.log(blog.showTitle())
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+// Override de métodos
+// O override de métodos é uma técnica utilizada para substituir um método de uma classe que herdamos algo
+// Basta criar o método com o mesmo nome na classe filha
+// Isso caracteriza o override
+class Base {
+    showName(name) {
+        return `meu nome é ${name}`;
+    }
+}
+// Método showName está sendo sobreecrito na segunda classe
+class NewBase extends Base {
+    showName(name) {
+        return name.toUpperCase();
+    }
+}
+const myClass = new NewBase();
+// console.log(myClass.showName(`Allan`))
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
