@@ -16,7 +16,7 @@ const Allan = new User()
 Allan.name = "Allan"
 Allan.age = 23
 
-console.log(Allan)
+// console.log(Allan)
 
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
@@ -41,7 +41,7 @@ class NewUser {
 
 const John = new NewUser("John Smith",35)
 
-console.log(John)
+// console.log(John)
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -62,7 +62,7 @@ class Car {
 
 const lancer = new Car("Lancer Evo X")
 
-console.log(lancer)
+// console.log(lancer)
 
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
@@ -85,7 +85,7 @@ class Machine {
 
 const trator = new Machine("Trator")
 
-console.log(trator)
+// console.log(trator)
 
 class DoctorMachine extends Machine {
   guns
@@ -97,7 +97,7 @@ class DoctorMachine extends Machine {
 
 const TheMoment = new DoctorMachine("The Moment",1)
 
-console.log(TheMoment)
+// console.log(TheMoment)
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -114,13 +114,13 @@ class Character {
   }
 
   greeting () {
-    console.log(`Hi, I am the ${this.name}`)
+    // console.log(`Hi, I am the ${this.name}`)
   }
 }
 
 const Doctor = new Character("Doctor")
 
-console.log(Doctor)
+// console.log(Doctor)
 
 Doctor.greeting()
 
@@ -147,9 +147,9 @@ class Truck {
 
 const truck = new Truck("volvo",500)
 
-console.table(truck)
+// console.table(truck)
 
-truck.showDetails()
+// truck.showDetails()
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -177,7 +177,7 @@ class HandleNumbers {
 
 const manipulateNumbers = new HandleNumbers(2,4)
 
-console.log(manipulateNumbers.sumNumbers)
+// console.log(manipulateNumbers.sumNumbers)
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -215,7 +215,121 @@ const coords = new Coords()
 coords.fillX = 21312
 coords.fillY = 11231
 
-console.log(coords.showCoords)
+// console.log(coords.showCoords)
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Herança de interfaces
+// Podemos herdar de interfaces também com a instrução implements
+// A ideia é bem parecida de extends
+// Porém esta forma é mais utilizada para criar os métodos que várias classes terão em comum
+
+interface Title {
+   showTitle(): string
+}
+
+class HandleTitle implements Title {
+   title
+
+   constructor(title: string){
+     this.title = title
+   }
+
+   showTitle(){
+    return `meu título de blog é "${this.title}"`
+   }
+}
+
+const blog = new HandleTitle("Blog noturno")
+
+// console.log(blog.showTitle())
 
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Override de métodos
+// O override de métodos é uma técnica utilizada para substituir um método de uma classe que herdamos algo
+// Basta criar o método com o mesmo nome na classe filha
+// Isso caracteriza o override
+
+class Base {
+   showName(name: string): string {
+     return `meu nome é ${name}`
+   }
+}
+
+// Método showName está sendo sobreecrito na segunda classe
+class NewBase extends Base {
+  showName(name: string): string {    
+    return name.toUpperCase()
+  }
+}
+
+const myClass = new NewBase()
+
+// console.log(myClass.showName(`Allan`))
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Visibilidade
+// Visibilidade é o conceito de expor nossos métodos de classes
+// Public: visivbilidade default, pode ser acessado em qualquer lugar
+// Protected: acessível somente nas sublclasses da classe do método , para acessar uma propriedade precisamos de um método
+// Private: apenas a classe que declarou o método pode utilizar
+
+// Visibilidade: public
+// o public é o modo default de visibilidade
+// Ou seja , ja está implícito e nao precisamos declarar
+// Basicamente qualquer método ou propriedade de classe pai estará acessível na classe filha
+
+class DadClass {
+  public property = 10
+}
+
+const dadClass = new DadClass()
+
+console.log(dadClass.property)
+
+class SonClass extends DadClass {
+   
+}
+
+const sonClass = new SonClass()
+
+console.log(sonClass.property)
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Visibilidade: protected
+// Os itens protected podem ser utilizados apenas em subclasses
+// Uma propriedade só pode ser acessada por um método, por exemplo:
+// O mesmo acontece com métodos
+// Adicionando uma camada de segurança ao código em uma classe
+
+
+class A {
+  protected property = 12312
+  
+ protected divideProperty(): number {
+   return this.property / 2
+ }
+
+}
+
+
+class B extends A {
+   showProtectedProperty () {
+     console.log(this.property)
+   }
+
+   calculateDivision() {
+     // métodos protected tamberm precisam ser repassados para métodos dentro das subclasses
+     return this.divideProperty()
+   }
+}
+
+const bInstance = new B()
+
+ console.log(bInstance.calculateDivision())
 
