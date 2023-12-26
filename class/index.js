@@ -208,3 +208,33 @@ class B extends A {
 }
 const bInstance = new B();
 console.log(bInstance.calculateDivision());
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+// visibilidade: private
+// Os itens private, propriedades e métodos, so podem ser acessados na classe que os definiu
+// E ainda precisam de métodos para serem acessados
+// Esta é a maior proteção para propriedades e métodos
+class PrivateClass {
+    constructor() {
+        this.name = 'Allan';
+    }
+    showName() {
+        return this.name;
+    }
+    calculateAge(year, bothYear) {
+        this.age = year - bothYear;
+        return `Você possui ${this.age} anos de idade`;
+    }
+    showAge(year, bothYear) {
+        return this.calculateAge(year, bothYear);
+    }
+}
+const privClass = new PrivateClass();
+class NewClass extends PrivateClass {
+    getAge(year, bothYear) {
+        return this.showAge(year, bothYear);
+    }
+}
+const newClass = new NewClass();
+console.log(newClass.getAge(2023, 2000));
+// propriedade name so é acessível dentro da própria classe e mesmo assim precisamos usar um método
+console.log(privClass.showName());
