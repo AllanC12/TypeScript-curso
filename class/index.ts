@@ -373,3 +373,45 @@ console.log(newClass.getAge(2023,2000))
 
 // propriedade name so é acessível dentro da própria classe e mesmo assim precisamos usar um método
 console.log(privClass.showName())
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Static members
+// Podemos criar propriedades e métodos estáticos em classes
+// isso faz com que o acesso ou a utilização não dependam de objetos
+// Podemos utilizá-los a partir da própria classe
+
+class StaticClass {
+   static propertyStatic = "Propriedade estática"
+
+   static methodStatic(message: string): void{
+    console.log(message)
+   }
+}
+
+console.log(StaticClass.propertyStatic)
+StaticClass.methodStatic("Mensagem de método estático")
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Generic class
+// Podemos criar classes com tipos genéricos tambem
+// Ou seja, as propriedades dos argumentos podem ter os tipos definidos na hora da instância 
+// Isso nos permite maior flexibilidade em uma classe
+
+class GenericClass <T,U> {
+   first
+   second
+
+   constructor(first: T, second: U) {
+     this.first = first
+     this.second = second
+   }
+}
+
+const firstItem = new GenericClass("Itens","genéricos")
+
+console.log(firstItem)
+
