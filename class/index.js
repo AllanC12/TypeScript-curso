@@ -238,3 +238,60 @@ const newClass = new NewClass();
 console.log(newClass.getAge(2023, 2000));
 // propriedade name so é acessível dentro da própria classe e mesmo assim precisamos usar um método
 console.log(privClass.showName());
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+// Static members
+// Podemos criar propriedades e métodos estáticos em classes
+// isso faz com que o acesso ou a utilização não dependam de objetos
+// Podemos utilizá-los a partir da própria classe
+class StaticClass {
+    static methodStatic(message) {
+        console.log(message);
+    }
+}
+StaticClass.propertyStatic = "Propriedade estática";
+console.log(StaticClass.propertyStatic);
+StaticClass.methodStatic("Mensagem de método estático");
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+// Generic class
+// Podemos criar classes com tipos genéricos tambem
+// Ou seja, as propriedades dos argumentos podem ter os tipos definidos na hora da instância 
+// Isso nos permite maior flexibilidade em uma classe
+class GenericClass {
+    constructor(first, second) {
+        this.first = first;
+        this.second = second;
+    }
+}
+const firstItem = new GenericClass("Itens", "genéricos");
+console.log(firstItem);
+const boolClass = new GenericClass(true, true);
+console.log(boolClass);
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+// Parameter properties
+// Parameters properties é um recurso para definir a privacidade, nome e tipo das propriedades no constructor
+// isso resume um pouco a sintaxe das nossas classes
+class ParameterPropertieClass {
+    constructor(name, price) {
+        this.name = name;
+        this.price = price;
+        this.name = name;
+        this.price = price;
+    }
+    returnPriceCar() {
+        return `O preço do carro é R$${this.price}`;
+    }
+}
+const car = new ParameterPropertieClass("Lancer", 190000);
+console.log(car.returnPriceCar());
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+// class expressions
+// class expressions é um recurso para criar uma classe anônima
+// Podemos tambem utilizar generics junto deste recurso
+// Vamos encapsular a classe em uma variável
+const myClassExpression = class {
+    constructor(name) {
+        this.name = name;
+    }
+};
+const classExpression = new myClassExpression("Allan");
+console.log(classExpression);
