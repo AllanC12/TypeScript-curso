@@ -415,3 +415,47 @@ const firstItem = new GenericClass("Itens","genéricos")
 
 console.log(firstItem)
 
+const boolClass = new GenericClass(true,true)
+
+console.log(boolClass)
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Parameter properties
+// Parameters properties é um recurso para definir a privacidade, nome e tipo das propriedades no constructor
+// isso resume um pouco a sintaxe das nossas classes
+
+class ParameterPropertieClass {
+  constructor(public name: string,private price: number){
+    this.name = name
+    this.price = price
+  }
+
+  
+  returnPriceCar(): string{
+    return `O preço do carro é R$${this.price}`
+  }
+}
+
+const car = new ParameterPropertieClass("Lancer",190000)
+
+console.log(car.returnPriceCar())
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// class expressions
+// class expressions é um recurso para criar uma classe anônima
+// Podemos tambem utilizar generics junto deste recurso
+// Vamos encapsular a classe em uma variável
+
+const myClassExpression = class <T> {
+    name
+   constructor(name: string){
+    this.name = name
+   }
+}
+
+const classExpression = new myClassExpression("Allan")
+
+console.log(classExpression)
