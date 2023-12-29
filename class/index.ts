@@ -459,3 +459,37 @@ const myClassExpression = class <T> {
 const classExpression = new myClassExpression("Allan")
 
 console.log(classExpression)
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Abstract class
+// Abstract class é um recurso para servir como molde de outra classe
+// Todos os métodos dela devem ser implementados nas classes que as herdam
+// E também não podemos instanciar objetos a partir dessa classe
+// Podemos comparar uma classe abstrata á uma interface
+// ambas são o molde do que será implementado na classe que a herdar
+
+abstract class MyAbstractClass {
+  abstract methodAbstract (message: string): string
+}
+
+
+class ExampleClass extends MyAbstractClass {
+  constructor(){
+    super()
+  }
+
+  methodAbstract(name: string): string {
+      return `Hi, my name is ${name}`
+  }
+
+  showMessage(name: string): string {
+    return this.methodAbstract(name)
+  }
+}
+
+const exampleClass = new ExampleClass()
+
+console.log(exampleClass.showMessage("Allan"))
+
+
