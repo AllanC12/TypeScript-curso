@@ -475,9 +475,7 @@ abstract class MyAbstractClass {
 
 
 class ExampleClass extends MyAbstractClass {
-  constructor(){
-    super()
-  }
+
 
   methodAbstract(name: string): string {
       return `Hi, my name is ${name}`
@@ -493,3 +491,26 @@ const exampleClass = new ExampleClass()
 console.log(exampleClass.showMessage("Allan"))
 
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Relações entre classes
+// Podemos criar um objeto com base em outra classe
+// Quando as classes são idênticas o TS não reclama sobre esta ação
+// Precisamos que as duas sejam exatamente iguais
+
+class Dog {
+  name!: string
+}
+
+class Cat {
+  name!: string
+}
+
+// doguinho receberá uma instância de cat.
+// o conteudo interno será verificado
+// se for tudo identico não haverá erros
+const doguinho: Dog = new Cat()
+
+console.log(doguinho)
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
