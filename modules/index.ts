@@ -27,3 +27,59 @@ console.log(message)
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 
+// Múltiplas importações
+// Podemos exportar múltiplas variáveis e funções
+// Isso pode ser realizado no mesmo arquivo
+// Para esta modalidade utilizamos export parar todos os dados
+// E todos devem ser importados com destructuring
+
+import { year,month,returnYear } from "./multiple.js";
+
+console.log(year)
+console.log(month)
+console.log(returnYear())
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Alias para importações
+// Ou seja , mudar o nome do que foi importado
+// Podendo tornar este novo nome uma forma mais simples de chamar o recurso
+
+import {changePhrase as messageChange} from "./multiple.js"
+
+console.log(messageChange)
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Importando tudo
+// Podemos importar tudo que está em um arquivo usando apenas um símbolo
+// Utilizamos o * para isso
+// Este simbolo precisa de um alias
+// Os dados virão em um objeto
+
+import * as handleNumbers from './gettingAll.js'
+
+console.log(handleNumbers)
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Importando tipos 
+// Importar tipos ou interfaces também é possível
+// Vamos exportar como se fossem variáveis
+// E no arquivo que as recebe utilizamos destructuring
+// Depois podemos implementar no projeto
+
+import { Calculator } from "./multiple.js";
+
+class ResolveOperation implements Calculator {
+  sumNumbers(n1: number,n2: number): number {
+    return n1 + n2;
+  }
+}
+
+const sumMyNumbers = new ResolveOperation();
+
+console.log(sumMyNumbers.sumNumbers(20,325));
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
