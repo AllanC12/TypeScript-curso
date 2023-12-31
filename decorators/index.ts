@@ -39,3 +39,33 @@ const myObj = new MyClass()
 myObj.testing()
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Múltiplos decorators
+// Podemos utilizar multiplos decorators em TS
+// O primeiro a ser executado é o que está mais ***abaixo do código***
+// Desta maneira é possível criar operações mais complexas
+
+function first () {
+    return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+        console.log("Executou first")
+    }
+}
+function second () {
+    return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+        console.log("Executou second")
+    }
+}
+function third () {
+    return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+        console.log("Executou third")
+    }
+}
+
+class MultipleDecorators {
+    @third()
+    @second()
+    @first()
+    testing() {
+      console.log("Finalizando execução de decorators")
+    }
+}
