@@ -174,3 +174,64 @@ __decorate([
 ], Id.prototype, "id", void 0);
 const newId = new Id('1');
 console.log(newId);
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+// Exemplo real com class decortor 
+// Com class decorator podemos influenciar o constructor
+// Neste exemplo vamos criar uma função para inserir data de criação dos objetos
+const createdAt = (createdAt) => {
+    createdAt.prototype.createdAt = new Date();
+};
+let Book = class Book {
+    constructor(id) {
+        this.id = id;
+    }
+};
+Book = __decorate([
+    createdAt
+], Book);
+let Pencil = class Pencil {
+    constructor(id) {
+        this.id = id;
+    }
+};
+Pencil = __decorate([
+    createdAt
+], Pencil);
+const book = new Book(12);
+const pencil = new Pencil(10);
+console.log(book);
+console.log(pencil);
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+// Exemplo real com method decorator
+// Com method decorator podemos alterar a execução dos métodos
+// Neste exemplo vamos verificar se um usuário pode ou não fazer uma alteração no sistema
+// A alteração seria o método a ser executado
+const verifyIfUserPosted = () => {
+    return function (target, key, descriptor) {
+        let childFunction = descriptor.value;
+        descriptor.value = function (...args) {
+            if (args[1]) {
+                console.log("Usuário ja postou");
+                return null;
+            }
+            else {
+                return childFunction.apply(this, args);
+            }
+        };
+    };
+};
+class Post {
+    constructor() {
+        this.alreadyPosted = false;
+    }
+    post(content, alreadyPosted) {
+        this.alreadyPosted = true;
+        console.log(`Conteúdo do post: ${content}`);
+    }
+}
+__decorate([
+    verifyIfUserPosted()
+], Post.prototype, "post", null);
+const newPost = new Post();
+newPost.post("Meu primeiro post", newPost.alreadyPosted);
+newPost.post("Meu primeiro post", newPost.alreadyPosted);

@@ -201,3 +201,76 @@ class Id {
 const newId = new Id('1')
 
 console.log(newId)
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Exemplo real com class decortor 
+// Com class decorator podemos influenciar o constructor
+// Neste exemplo vamos criar uma função para inserir data de criação dos objetos
+
+const createdAt = (createdAt: Function) =>{
+    createdAt.prototype.createdAt = new Date()
+}
+
+@createdAt
+class Book {
+    id
+    createdAt?: Date
+    constructor(id: number){
+        this.id = id
+    }
+}
+
+@createdAt
+class Pencil {
+    id
+    createdAt?: Date
+    constructor(id: number){
+        this.id = id
+    }
+}
+
+const book = new Book(12)
+const pencil = new Pencil(10)
+
+console.log(book)
+console.log(pencil)
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Exemplo real com method decorator
+// Com method decorator podemos alterar a execução dos métodos
+// Neste exemplo vamos verificar se um usuário pode ou não fazer uma alteração no sistema
+// A alteração seria o método a ser executado
+
+const verifyIfUserPosted = () => {
+   return function (target: Object,key: Symbol | string, descriptor: PropertyDescriptor) {
+     let childFunction = descriptor.value
+     
+     descriptor.value = function (...args: any[]) {
+        if(args[1]){
+         console.log("Usuário ja postou")
+         return null
+        }else{
+         return childFunction.apply(this,args)
+        }
+     }
+
+   }
+}
+
+class Post {
+    alreadyPosted:boolean = false
+
+    @verifyIfUserPosted()
+    post(content: string, alreadyPosted: boolean){
+        this.alreadyPosted = true;
+        console.log(`Conteúdo do post: ${content}`);
+    }
+}
+
+const newPost = new Post()
+
+newPost.post("Meu primeiro post",newPost.alreadyPosted)
+newPost.post("Meu primeiro post",newPost.alreadyPosted)
+
