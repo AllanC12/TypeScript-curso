@@ -108,7 +108,6 @@ class User {
 const removeFunctionDecorator = (value: boolean) =>{
     return (target: any, propertyKey: string, descriptor:PropertyDescriptor) => {
        descriptor.enumerable = value
-       console.log(descriptor)
     }
 }
 
@@ -133,3 +132,72 @@ class Calculator {
 const calculator = new Calculator("+")
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
+// Acessor decorator
+// Semelhante ao decorator de método
+// Porém este serve apenas para os getters e setters
+// Podemos alterar a execução antes de um set ou get
+// Nada muda na sintaxe
+
+
+class Car {
+    name?
+    km?
+
+    constructor(name: string, km: number){
+        this.name = name
+        this.km = km
+    }
+
+    @removeFunctionDecorator(true)
+    get showName(){
+        return `nome do carro: ${this.name}`
+    }
+
+    @removeFunctionDecorator(true)
+    get showKm() {
+        return `km rodado: ${this.km}`
+    }
+}
+
+const ferrari = new Car("Ferrari",20000)
+
+console.log(ferrari)
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+// Property decorator
+// O property decorator é utilizado nas propriedades de uma classe
+// Ou seja , na hora da definição da mesma podemos ativar uma função
+// Isso nos ajuda a modificar ou validar algum valor
+
+const formatNumber = () => {
+    return (target: Object, propertyKey: string) => {
+        let value: string
+        
+        //estrutura de getter 
+        const getValue = () => {
+            return value
+        }
+        //estrutura de setter
+        const setValue = (newValue: string) => {
+            value = newValue.padStart(5,"0")
+        }
+
+        //passando as informções para o objeto/property a ser modificada/validada
+        Object.defineProperty(target,propertyKey, {
+            get: getValue,
+            set: setValue
+        })
+    }
+}
+
+class Id {
+    @formatNumber() // properyDecorator sendo chamado antes da definição da prpriedade
+    id
+    constructor(id: string){
+        this.id = id
+    }
+}
+
+const newId = new Id('1')
+
+console.log(newId)
