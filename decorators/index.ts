@@ -69,3 +69,67 @@ class MultipleDecorators {
       console.log("Finalizando execução de decorators")
     }
 }
+
+
+const multiple = new MultipleDecorators()
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Decorator de classe
+// O decorator de classe está ligado ao constructor
+// Ou seja, sempre que este for executado, teremos a execução do decorator
+// Isso nos permite acrescentar algo a criação de classes
+
+const classDecFunction = (constructor: Function) => {
+    console.log(constructor)
+    if(constructor.name === "User") console.log("Carregando usuário")
+
+}
+
+@classDecFunction    // note que não há panteses na chamada da função de decorator
+class User {
+    name
+    constructor(name: String){
+        this.name = name
+    }
+
+    showName(){
+        console.log("Allan")
+    }
+}
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Decorator de método
+// Com este decorator podemos modificar a execução de métodos 
+// Precisamos inserir o decorator antes da declaração do método
+// Ele é executado antes do método
+
+const removeFunctionDecorator = (value: boolean) =>{
+    return (target: any, propertyKey: string, descriptor:PropertyDescriptor) => {
+       descriptor.enumerable = value
+       console.log(descriptor)
+    }
+}
+
+
+class Calculator {
+    operation
+    constructor(operation: string){
+        this.operation = operation
+        console.log(this)
+    }
+
+    resolveOperation(){
+        return `A operação a ser realizada será de: ${this.operation}`
+    }
+    
+    @removeFunctionDecorator(false)
+    writeText(){
+        console.log("Função que escreve um texto")
+    }
+}
+
+const calculator = new Calculator("+")
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
