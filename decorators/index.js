@@ -97,7 +97,6 @@ User = __decorate([
 const removeFunctionDecorator = (value) => {
     return (target, propertyKey, descriptor) => {
         descriptor.enumerable = value;
-        console.log(descriptor);
     };
 };
 class Calculator {
@@ -117,3 +116,122 @@ __decorate([
 ], Calculator.prototype, "writeText", null);
 const calculator = new Calculator("+");
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
+// Acessor decorator
+// Semelhante ao decorator de método
+// Porém este serve apenas para os getters e setters
+// Podemos alterar a execução antes de um set ou get
+// Nada muda na sintaxe
+class Car {
+    constructor(name, km) {
+        this.name = name;
+        this.km = km;
+    }
+    get showName() {
+        return `nome do carro: ${this.name}`;
+    }
+    get showKm() {
+        return `km rodado: ${this.km}`;
+    }
+}
+__decorate([
+    removeFunctionDecorator(true)
+], Car.prototype, "showName", null);
+__decorate([
+    removeFunctionDecorator(true)
+], Car.prototype, "showKm", null);
+const ferrari = new Car("Ferrari", 20000);
+console.log(ferrari);
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+// Property decorator
+// O property decorator é utilizado nas propriedades de uma classe
+// Ou seja , na hora da definição da mesma podemos ativar uma função
+// Isso nos ajuda a modificar ou validar algum valor
+const formatNumber = () => {
+    return (target, propertyKey) => {
+        let value;
+        //estrutura de getter 
+        const getValue = () => {
+            return value;
+        };
+        //estrutura de setter
+        const setValue = (newValue) => {
+            value = newValue.padStart(5, "0");
+        };
+        //passando as informções para o objeto/property a ser modificada/validada
+        Object.defineProperty(target, propertyKey, {
+            get: getValue,
+            set: setValue
+        });
+    };
+};
+class Id {
+    constructor(id) {
+        this.id = id;
+    }
+}
+__decorate([
+    formatNumber() // properyDecorator sendo chamado antes da definição da prpriedade
+], Id.prototype, "id", void 0);
+const newId = new Id('1');
+console.log(newId);
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+// Exemplo real com class decortor 
+// Com class decorator podemos influenciar o constructor
+// Neste exemplo vamos criar uma função para inserir data de criação dos objetos
+const createdAt = (createdAt) => {
+    createdAt.prototype.createdAt = new Date();
+};
+let Book = class Book {
+    constructor(id) {
+        this.id = id;
+    }
+};
+Book = __decorate([
+    createdAt
+], Book);
+let Pencil = class Pencil {
+    constructor(id) {
+        this.id = id;
+    }
+};
+Pencil = __decorate([
+    createdAt
+], Pencil);
+const book = new Book(12);
+const pencil = new Pencil(10);
+console.log(book);
+console.log(pencil);
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+// Exemplo real com method decorator
+// Com method decorator podemos alterar a execução dos métodos
+// Neste exemplo vamos verificar se um usuário pode ou não fazer uma alteração no sistema
+// A alteração seria o método a ser executado
+const verifyIfUserPosted = () => {
+    return function (target, key, descriptor) {
+        let childFunction = descriptor.value;
+        descriptor.value = function (...args) {
+            if (args[1]) {
+                console.log("Usuário ja postou");
+                return null;
+            }
+            else {
+                return childFunction.apply(this, args);
+            }
+        };
+    };
+};
+class Post {
+    constructor() {
+        this.alreadyPosted = false;
+    }
+    post(content, alreadyPosted) {
+        this.alreadyPosted = true;
+        console.log(`Conteúdo do post: ${content}`);
+    }
+}
+__decorate([
+    verifyIfUserPosted()
+], Post.prototype, "post", null);
+const newPost = new Post();
+newPost.post("Meu primeiro post", newPost.alreadyPosted);
+newPost.post("Meu primeiro post", newPost.alreadyPosted);
