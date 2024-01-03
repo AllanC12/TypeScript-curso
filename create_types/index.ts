@@ -81,7 +81,7 @@ const Allan : Person<number,number> = {
 
 // Type Parameters
 // Type parameters é um recurso de Generics
-// Utilizado apra dizer que alguma parâmetro de uma função por exemplo é a chave de um objeto, que também é parâmetro
+// Utilizado para dizer que algum parâmetro de uma função por exemplo é a chave de um objeto, que também é parâmetro
 // Desta maneira conseguimos criar uma ligação entre o tipo genérico e sua chave
 // Para isso usamos o operador keyof 
 
@@ -148,7 +148,7 @@ console.log(userRegistered)
 
 // Indexed acess type
 
-// A abordagem Indexed acess types pode criar um tipo baseado em uma chave de obejeto
+// A abordagem Indexed acess types pode criar um tipo baseado em uma chave de objeto
 // Ou seja , conseguimos reaproveitar o tipo da chave para outros locais como funções
 
 
@@ -164,6 +164,8 @@ const earth: Planet = {
 }
 
 type Size = Planet["diameter"]
+
+
 
 const showDetails = (sizePlanet: Size) => {
    return `O  diâmetro do planeta Terra é ${sizePlanet} km`
