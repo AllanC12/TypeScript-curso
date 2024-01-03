@@ -24,6 +24,10 @@ const showProduct = (obj) => {
 const car = {
     name: "Lancer"
 };
+const price = {
+    price: 1231
+};
+console.log(showProduct(car));
 const flash = {
     name: "Barry Alen",
     age: 29,
