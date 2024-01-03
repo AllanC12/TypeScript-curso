@@ -253,6 +253,7 @@ const maxLimit = (limit) => {
             }
             else {
                 value = newVal;
+                console.log(value);
             }
         };
         Object.defineProperty(target, propertyKey, {

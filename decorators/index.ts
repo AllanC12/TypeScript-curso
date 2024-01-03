@@ -296,6 +296,7 @@ const maxLimit = (limit: number) => {
             return
         }else{
             value = newVal
+            console.log(value)
         }
     }
 
