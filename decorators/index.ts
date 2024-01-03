@@ -204,7 +204,7 @@ console.log(newId)
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 
-// Exemplo real com class decortor 
+// Exemplo real com class decorator 
 // Com class decorator podemos influenciar o constructor
 // Neste exemplo vamos criar uma função para inserir data de criação dos objetos
 
@@ -274,3 +274,44 @@ const newPost = new Post()
 newPost.post("Meu primeiro post",newPost.alreadyPosted)
 newPost.post("Meu primeiro post",newPost.alreadyPosted)
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Exemplo real com property decorator
+// Com o property decorator conseguimos verificar uma propriedade de um objeto
+// Vamos criar uma validação de número máximo de caracteres com decorators
+
+
+const maxLimit = (limit: number) => {
+  return (target: Object, propertyKey: string) => { 
+    let value: string
+    
+    const getter = () => {
+        return value
+    }
+    
+    const setter = (newVal: string) => {
+        //newVal guarda o valor da propriedade a ser "decorada" na classe
+        if(newVal.length > limit){
+            console.log("O nome só pode ter 10 caracteres")
+            return
+        }else{
+            value = newVal
+        }
+    }
+
+    Object.defineProperty(target,propertyKey,{
+        get: getter,
+        set: setter
+    })
+  }
+}
+
+class Admin {
+    @maxLimit(8)
+    userName
+    constructor(username: string){
+        this.userName = username
+    }
+}
+
+const Allan = new Admin("Allan")
