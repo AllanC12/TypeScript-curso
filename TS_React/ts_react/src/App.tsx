@@ -1,6 +1,7 @@
 import './App.css'
 import FirstComponent from './components/FirstComponent'
 import Post from './components/Post'
+import State from './components/State'
 
 function App() {
 
@@ -32,9 +33,20 @@ function App() {
      ) : (
        <h3>Está trabalhando: Não</h3>
      )}
+      <hr/>
+
      <h3>{userGreeting(name)}</h3>
+     <hr/>
+
      <FirstComponent />
+     <hr/>
+
      <Post title={title} content={content} amountComments={amountComments} tags={tags} />
+     <hr/>
+
+     <State/>
+     <hr/>
+
     </>
   )
 }
