@@ -1,9 +1,16 @@
 import './App.css'
 import FirstComponent from './components/FirstComponent'
-import Post from './components/Post'
+import Post, {Category} from './components/Post'
 import State from './components/State'
+import { useState } from 'react'
+
+type textOrNull = string | null
+
 
 function App() {
+  
+  const [stateNull] = useState<textOrNull>("State tipado com type")
+  const variable: textOrNull = "texto"
 
   const name: string = "Allan"
   const age: number = 23
@@ -41,10 +48,14 @@ function App() {
      <FirstComponent />
      <hr/>
 
-     <Post title={title} content={content} amountComments={amountComments} tags={tags} />
+     <Post category={Category.JS} title={title} content={content} amountComments={amountComments} tags={tags} />
+     <Post category={Category.P} title={title} content={content} amountComments={amountComments} tags={tags} />
      <hr/>
 
      <State/>
+
+     <h4>Variavel tipada com type: {variable}</h4>
+     <h4>State tipado com type: {stateNull}</h4>
      <hr/>
 
     </>
