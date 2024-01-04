@@ -1,5 +1,6 @@
 import './App.css'
 import FirstComponent from './components/FirstComponent'
+import Post from './components/Post'
 
 function App() {
 
@@ -10,6 +11,16 @@ function App() {
   const userGreeting = (name: string): string => {
     return `Olá ${name}`
   }
+
+
+  const contentPost = {
+    title: "Título do post",
+    content: "Contúdo do post",
+    amountComments: 100,
+    tags: ["js","ts","programming"]
+  }
+
+  const {title,content,amountComments,tags} = contentPost
 
   return (
     <>
@@ -22,7 +33,8 @@ function App() {
        <h3>Está trabalhando: Não</h3>
      )}
      <h3>{userGreeting(name)}</h3>
-     <FirstComponent/>
+     <FirstComponent />
+     <Post title={title} content={content} amountComments={amountComments} tags={tags} />
     </>
   )
 }
