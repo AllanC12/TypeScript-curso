@@ -1,3 +1,5 @@
+
+
 // Enum usa operador de atribuição nas suas chaves  =   
 // Estamos usando como prop nesse proprio componente, por isso exportamos
 export enum Category {
