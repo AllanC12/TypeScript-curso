@@ -1,0 +1,8 @@
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Para iniciar um projeto com express e typescript precisamos criar o projeto com npm init
+E tambem iniciar o TS com npx tsc --init
+Após estes dois passos vamos instalar as dependencias, algumas são de dev (como os tipos) e outras não (como o express)
+Pro fim criamos um script e iniciamos a aplicação
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
