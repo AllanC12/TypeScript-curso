@@ -55,3 +55,27 @@ Teremos então param1 e param2 em req
 Router hanler é um recurso muito interessante para o express
 Basicamente retiramos a função anônima de uma rota e a externalizamos em uma função
 Podemos reaproveitar essa função, ou estrutura na nossa aplicação desta maneira 
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Middleware é um recurso para executar uma função entre a execução de uma rota por exemplo
+O nosso app.use de json é um middleware.
+Podemos utilizar middlewares para validações por exemplo.
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Para criar um middleware que é executado em todas as rotas vamos usar o método use
+Criamos uma função e atrelamos ao método
+Desta maneira todas as rotas terão ação do nosso middleware
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Podemos estabelecer os argumentos que vem pelo request e vão pela response
+Para isso vamos utilizar os generics de response e request
+Que são as interfaces disponibilizadas pelo express
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Para tratar possíveis erros utilizamos blocos try catch
+Desta maneira podemos detectar algum problema e retornar uma reposta pro usuário
+Ou até mesmo criar um log no sistema
