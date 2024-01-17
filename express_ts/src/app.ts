@@ -1,9 +1,20 @@
 
 // init express
 
-import express,{Request,Response} from 'express'
+import express,{NextFunction,Request,Response} from 'express'
 
 const app = express()
+
+// 2 ---> middleware para todas as rotas
+
+const showPath = (req: Request,res: Response,next: NextFunction) => {
+  console.log(req.path)
+  next()
+}
+
+app.use(showPath)
+
+
 
 app.get('/',(req,res) => {
     return res.send("Hello Express!!!")
@@ -81,6 +92,43 @@ app.get('/api/product/:productId/review/:reviewId',(req:Request,res:Response) =>
 
  app.get('/api/user/:id',getUser)
 
+// 10 ---> middeware
+
+const verifyUser = (req:Request,res:Response,next:NextFunction) => {
+  const id:string = req.params.id
+  if(id === '1'){
+    console.log('usuário com acesso admnistrativo')
+    next()
+  }else{
+    console.log('Usuário não encontrado')
+  }
+}
+
+app.get('/api/user/:id/access',verifyUser,(req: Request, res: Response) => {
+  const message = {
+    mensagem: "Usuário com acesso admnistrativo"
+  }
+  return res.json(message)
+})
+
+// 11 ---> req e res com generics
+
+app.get('/api/user/:id/details/:name',(req: Request<{id: string, name: string}>,res: Response<{status: boolean}>) => {
+  console.log(`ID: ${req.params.id}`)
+  console.log(`Name: ${req.params.name}`)
+  
+  return res.json({status: true})
+})
+
+// 12 ---> Tratando erros
+
+app.get('/api/error', (req:Request, res: Response)=> {
+  try {
+    throw new Error("Algo deu errado")
+  } catch (e: any) {
+    return res.status(500).json({msg: e.message})
+  }
+})
 
 
 app.listen(3000, () => {
