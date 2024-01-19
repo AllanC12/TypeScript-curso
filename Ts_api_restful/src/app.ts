@@ -7,6 +7,9 @@ import router from './router'
 
 import connect from '../config/db'
 
+//logger
+import Logger from '../config/logger'
+
 const app = express()
 
 // JSON middleware
@@ -18,6 +21,6 @@ const port = config.get<number>('port')
 
 app.listen(port, async () => {
     await connect()
-    console.log('Aplicação rodando na porta ' + port)
+    Logger.info('Aplicação rodando na porta ' + port)
 })
 
