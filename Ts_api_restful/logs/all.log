@@ -65,3 +65,63 @@
 2024-01-19 23:28:22:2822 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
 2024-01-19 23:28:29:2829 - [35mhttp[39m : [35mGET /api/test 200 12 - 5.257 ms[39m
 [35m[39m
+2024-01-20 13:38:09:389 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 13:38:09:389 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 13:58:13:5813 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 13:58:13:5813 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 13:58:17:5817 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 13:58:17:5817 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 13:58:27:5827 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 13:58:27:5827 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 13:59:10:5910 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 13:59:10:5910 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 14:01:54:154 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 14:01:54:154 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 14:05:33:533 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 14:05:33:533 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 14:05:45:545 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 14:05:45:545 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 14:05:52:552 - [35mhttp[39m : [35mGET /api//movies 404 150 - 4.532 ms[39m
+[35m[39m
+2024-01-20 14:06:04:64 - [35mhttp[39m : [35mGET /api/movies 404 149 - 2.020 ms[39m
+[35m[39m
+2024-01-20 14:06:10:610 - [35mhttp[39m : [35mPOST /api/movies 200 25 - 2.571 ms[39m
+[35m[39m
+2024-01-20 14:07:33:733 - [35mhttp[39m : [35mPOST /api/movies 200 25 - 0.722 ms[39m
+[35m[39m
+2024-01-20 14:09:43:943 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 14:09:43:943 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 14:09:47:947 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 14:09:47:947 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 14:09:53:953 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 14:09:53:953 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 14:10:02:102 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 14:10:02:102 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 14:10:08:108 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 14:10:08:108 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 14:10:19:1019 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 14:10:19:1019 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 14:10:22:1022 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 14:10:22:1022 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 14:11:24:1124 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 14:11:24:1124 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 14:12:24:1224 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 14:12:24:1224 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 14:13:40:1340 - [35mhttp[39m : [35mPOST /api/movies 404 150 - 4.859 ms[39m
+[35m[39m
+2024-01-20 14:15:55:1555 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 14:15:55:1555 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 14:16:08:168 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 14:16:08:168 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 14:16:19:1619 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 14:16:19:1619 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 14:16:20:1620 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 14:16:20:1620 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 14:16:25:1625 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 14:16:25:1625 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 14:16:27:1627 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 14:16:27:1627 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 14:16:34:1634 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 14:16:34:1634 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 14:17:06:176 - [35mhttp[39m : [35mPOST /api/movie 201 148 - 68.793 ms[39m
+[35m[39m
