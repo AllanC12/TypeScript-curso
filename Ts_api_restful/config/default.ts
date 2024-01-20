@@ -7,3 +7,4 @@ export default {
     dbUri: `mongodb+srv://${dbUser}:${dbPass}@cluster0.ukfexeh.mongodb.net/?retryWrites=true&w=majority`,
     env: `development`
 }
+
