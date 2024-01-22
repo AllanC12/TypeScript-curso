@@ -375,3 +375,340 @@
 2024-01-20 23:34:58:3458 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
 2024-01-20 23:39:25:3925 - [35mhttp[39m : [35mPOST /api/movie 201 499 - 87.854 ms[39m
 [35m[39m
+2024-01-20 23:53:47:5347 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 23:53:47:5347 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 23:54:04:544 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 23:54:04:544 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 23:54:17:5417 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 23:54:17:5417 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 23:54:22:5422 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 23:54:22:5422 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 23:54:24:5424 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 23:54:24:5424 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 23:54:36:5436 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 23:54:36:5436 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 23:55:02:552 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 23:55:02:552 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 23:55:21:5521 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 23:55:21:5521 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 23:55:27:5527 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 23:55:27:5527 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 23:55:29:5529 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 23:55:29:5529 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 23:55:33:5533 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 23:55:34:5534 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 23:55:40:5540 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 23:55:40:5540 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 23:55:47:5547 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 23:55:47:5547 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 23:55:57:5557 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 23:55:57:5557 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 23:56:00:560 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 23:56:00:560 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 23:56:07:567 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 23:56:07:567 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 23:56:38:5638 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 23:56:38:5638 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 23:56:46:5646 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 23:56:46:5646 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 23:56:55:5655 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 23:56:55:5655 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 23:58:56:5856 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 23:58:56:5856 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 23:59:03:593 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 23:59:03:593 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 23:59:10:5910 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-20 23:59:10:5910 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-20 23:59:10:5910 - [35mhttp[39m : [35mGET /api/movie/65ac83dd5e978caca9c5e084 200 509 - 74.358 ms[39m
+[35m[39m
+2024-01-21 00:00:41:041 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:00:41:041 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:00:41:041 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65ac83dd5e978caca9c5e08" (type string) at path "_id" for model "movie"[39m
+2024-01-21 00:01:15:115 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65ac83dd5e978caca9c5e08" (type string) at path "_id" for model "movie"[39m
+2024-01-21 00:01:15:115 - [35mhttp[39m : [35mGET /api/movie/65ac83dd5e978caca9c5e08 404 31 - 65.717 ms[39m
+[35m[39m
+2024-01-21 00:01:16:116 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:01:16:116 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:01:25:125 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:01:25:125 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:01:28:128 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:01:28:128 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:01:31:131 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65ac83dd5e978caca9c5e08" (type string) at path "_id" for model "movie"[39m
+2024-01-21 00:01:31:131 - [35mhttp[39m : [35mGET /api/movie/65ac83dd5e978caca9c5e08 404 31 - 19.869 ms[39m
+[35m[39m
+2024-01-21 00:03:22:322 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:03:22:322 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:03:34:334 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:03:34:334 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:03:51:351 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:03:51:351 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:03:55:355 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:03:55:355 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:03:59:359 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:03:59:359 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:04:10:410 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:04:10:410 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:04:13:413 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:04:13:413 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:04:26:426 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:04:26:426 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:04:30:430 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:04:30:430 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:04:47:447 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:04:47:447 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:04:56:456 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:04:56:456 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:04:58:458 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:04:58:458 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:05:14:514 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:05:14:514 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:05:19:519 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:05:19:519 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:05:59:559 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:05:59:559 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:06:10:610 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:06:10:610 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:06:16:616 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:06:16:616 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:06:24:624 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:06:24:624 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:06:43:643 - [35mhttp[39m : [35mPOST /api/movie 422 357 - 26.874 ms[39m
+[35m[39m
+2024-01-21 00:06:51:651 - [35mhttp[39m : [35mGET /api/movie 200 1566 - 66.428 ms[39m
+[35m[39m
+2024-01-21 00:09:20:920 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:09:20:920 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:09:23:923 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:09:23:923 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:09:37:937 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:09:37:937 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:09:40:940 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:09:40:940 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:09:48:948 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:09:48:948 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:10:02:102 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:10:02:102 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:10:06:106 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:10:06:106 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:10:21:1021 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:10:21:1021 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:10:26:1026 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:10:26:1026 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:10:34:1034 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:10:34:1034 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:10:44:1044 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:10:44:1044 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:11:31:1131 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:11:31:1131 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:11:59:1159 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:11:59:1159 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:12:08:128 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:12:08:128 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:12:17:1217 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:12:17:1217 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:12:24:1224 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:12:24:1224 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:12:27:1227 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:12:27:1227 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:12:32:1232 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:12:32:1232 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:13:06:136 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:13:06:136 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:13:18:1318 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:13:18:1318 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:13:27:1327 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:13:27:1327 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:13:38:1338 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 00:13:38:1338 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 00:15:11:1511 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65ac760055f376b81e091dfc\n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 00:15:11:1511 - [35mhttp[39m : [35mGET /api/movie/65ac760055f376b81e091dfc%0A 500 38 - 20.055 ms[39m
+[35m[39m
+2024-01-21 21:40:34:4034 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 21:40:34:4034 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 21:55:54:5554 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65ac760055f376b81e091dfc\n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 21:55:54:5554 - [35mhttp[39m : [35mDELETE /api/movie/65ac760055f376b81e091dfc%0A 500 38 - 36.731 ms[39m
+[35m[39m
+2024-01-21 21:57:08:578 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65ac001205288f3d1233a73d\n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 21:57:08:578 - [35mhttp[39m : [35mDELETE /api/movie/65ac001205288f3d1233a73d%0A 500 38 - 5.316 ms[39m
+[35m[39m
+2024-01-21 21:58:39:5839 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 21:58:39:5839 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 21:58:46:5846 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 21:58:46:5846 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 21:58:56:5856 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 21:58:56:5856 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 21:58:59:5859 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 21:58:59:5859 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 21:59:15:5915 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 21:59:15:5915 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 21:59:15:5915 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65ac001205288f3d1233a73d\n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 21:59:15:5915 - [35mhttp[39m : [35mDELETE /api/movie/65ac001205288f3d1233a73d%0A 500 38 - 23.710 ms[39m
+[35m[39m
+2024-01-21 21:59:24:5924 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 21:59:24:5924 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:00:17:017 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:00:17:017 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:00:25:025 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:00:25:025 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:00:30:030 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65ac001205288f3d1233a73d\n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 22:00:30:030 - [35mhttp[39m : [35mDELETE /api/movie/65ac001205288f3d1233a73d%0A 500 38 - 44.150 ms[39m
+[35m[39m
+2024-01-21 22:02:17:217 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65ac760055f376b81e091dfc\n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 22:02:17:217 - [35mhttp[39m : [35mDELETE /api/movie/65ac760055f376b81e091dfc%0A 500 38 - 7.581 ms[39m
+[35m[39m
+2024-01-21 22:02:40:240 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65ac001205288f3d1233a73d\n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 22:02:40:240 - [35mhttp[39m : [35mDELETE /api/movie/65ac001205288f3d1233a73d%0A 500 38 - 2.792 ms[39m
+[35m[39m
+2024-01-21 22:04:38:438 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:04:38:438 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:05:15:515 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65ac7f9872b0d879fda50dc2\n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 22:05:15:515 - [35mhttp[39m : [35mDELETE /api/movie/65ac7f9872b0d879fda50dc2%0A 500 38 - 13.430 ms[39m
+[35m[39m
+2024-01-21 22:06:13:613 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:06:13:613 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:06:14:614 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65ac7f9872b0d879fda50dc2\n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 22:06:14:614 - [35mhttp[39m : [35mDELETE /api/movie/65ac7f9872b0d879fda50dc2%0A 500 38 - 13.972 ms[39m
+[35m[39m
+2024-01-21 22:06:31:631 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:06:31:631 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:06:33:633 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65ac7f9872b0d879fda50dc2\n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 22:06:34:634 - [35mhttp[39m : [35mDELETE /api/movie/65ac7f9872b0d879fda50dc2%0A 500 38 - 17.639 ms[39m
+[35m[39m
+2024-01-21 22:07:12:712 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:07:12:712 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:07:19:719 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:07:19:719 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:07:19:719 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65ac7f9872b0d879fda50dc2\n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 22:07:19:719 - [35mhttp[39m : [35mDELETE /api/movie/65ac7f9872b0d879fda50dc2%0A 500 38 - 29.250 ms[39m
+[35m[39m
+2024-01-21 22:08:09:89 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:08:09:89 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:08:14:814 - [35mhttp[39m : [35mDELETE /api/movie/65ac7f9872b0d879fda50dc2%0A 404 31 - 44.606 ms[39m
+[35m[39m
+2024-01-21 22:08:42:842 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:08:42:842 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:08:46:846 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:08:46:846 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:08:53:853 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:08:53:853 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:09:58:958 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:09:58:958 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:10:21:1021 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:10:21:1021 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:10:37:1037 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:10:37:1037 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:12:22:1222 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:12:22:1222 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:12:27:1227 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65adc0cf1b2a36d8923b264d\n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 22:12:27:1227 - [35mhttp[39m : [35mDELETE /api/movie/65adc0cf1b2a36d8923b264d%0A 500 38 - 27.040 ms[39m
+[35m[39m
+2024-01-21 22:12:27:1227 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:12:27:1227 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:14:04:144 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:14:04:144 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:16:40:1640 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65adc0cf1b2a36d8923b264d\n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 22:16:40:1640 - [35mhttp[39m : [35mDELETE /api/movie/65adc0cf1b2a36d8923b264d%0A 500 38 - 16.780 ms[39m
+[35m[39m
+2024-01-21 22:18:25:1825 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65adc0cf1b2a36d8923b264d;l \n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 22:18:25:1825 - [35mhttp[39m : [35mDELETE /api/movie/65adc0cf1b2a36d8923b264d;l%20%0A 500 38 - 5.630 ms[39m
+[35m[39m
+2024-01-21 22:18:34:1834 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65adc0cf1b2a36d8923b264d\n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 22:18:34:1834 - [35mhttp[39m : [35mDELETE /api/movie/65adc0cf1b2a36d8923b264d%0A 500 38 - 1.847 ms[39m
+[35m[39m
+2024-01-21 22:19:01:191 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:19:01:191 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:19:46:1946 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:19:46:1946 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:19:53:1953 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:19:53:1953 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:20:25:2025 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:20:25:2025 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:20:29:2029 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65adc0cf1b2a36d8923b264d\n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 22:20:29:2029 - [35mhttp[39m : [35mDELETE /api/movie/65adc0cf1b2a36d8923b264d%0A 500 38 - 15.635 ms[39m
+[35m[39m
+2024-01-21 22:20:31:2031 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65adc0cf1b2a36d8923b264d\n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 22:20:31:2031 - [35mhttp[39m : [35mDELETE /api/movie/65adc0cf1b2a36d8923b264d%0A 500 38 - 3.779 ms[39m
+[35m[39m
+2024-01-21 22:20:33:2033 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65adc0cf1b2a36d8923b264d\n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 22:20:33:2033 - [35mhttp[39m : [35mDELETE /api/movie/65adc0cf1b2a36d8923b264d%0A 500 38 - 8.764 ms[39m
+[35m[39m
+2024-01-21 22:20:40:2040 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65adc0cf1b2a36d8923b264d\n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 22:20:40:2040 - [35mhttp[39m : [35mDELETE /api/movie/65adc0cf1b2a36d8923b264d%0A 500 38 - 8.035 ms[39m
+[35m[39m
+2024-01-21 22:21:29:2129 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65adc30c1b2a36d8923b264e\n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 22:21:29:2129 - [35mhttp[39m : [35mDELETE /api/movie/65adc30c1b2a36d8923b264e%0A 500 38 - 2.824 ms[39m
+[35m[39m
+2024-01-21 22:23:55:2355 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:23:55:2355 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:23:58:2358 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65adc30c1b2a36d8923b264e\n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 22:23:58:2358 - [35mhttp[39m : [35mDELETE /api/movie/65adc30c1b2a36d8923b264e%0A 500 38 - 27.355 ms[39m
+[35m[39m
+2024-01-21 22:24:23:2423 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:24:23:2423 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:24:26:2426 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65adc30c1b2a36d8923b264e\n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 22:24:26:2426 - [35mhttp[39m : [35mDELETE /api/movies/65adc30c1b2a36d8923b264e%0A 500 38 - 24.643 ms[39m
+[35m[39m
+2024-01-21 22:24:33:2433 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:24:33:2433 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:25:23:2523 - [31merror[39m : [31mErro no sistema: Cast to ObjectId failed for value "65ac001205288f3d1233a73d\n" (type string) at path "_id" for model "movie"[39m
+2024-01-21 22:25:23:2523 - [35mhttp[39m : [35mDELETE /api/movie/65ac001205288f3d1233a73d%0A 500 38 - 14.031 ms[39m
+[35m[39m
+2024-01-21 22:26:39:2639 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:26:39:2639 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:26:42:2642 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:26:42:2642 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:26:43:2643 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:26:43:2643 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:26:52:2652 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:26:52:2652 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:26:59:2659 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:26:59:2659 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:27:17:2717 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:27:17:2717 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:27:21:2721 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:27:21:2721 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:28:02:282 - [35mhttp[39m : [35mDELETE /api/movie/65ac001205288f3d1233a73d%0A 200 36 - 2.635 ms[39m
+[35m[39m
+2024-01-21 22:28:16:2816 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:28:16:2816 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:28:18:2818 - [35mhttp[39m : [35mDELETE /api/movie/65ac001205288f3d1233a73d%0A 200 36 - 5.818 ms[39m
+[35m[39m
+2024-01-21 22:28:34:2834 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:28:34:2834 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:28:46:2846 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:28:47:2847 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:28:55:2855 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:28:55:2855 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:28:57:2857 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:28:57:2857 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:40:51:4051 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:40:51:4051 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:42:03:423 - [31merror[39m : [31mErro no sistema: input must be a 24 character hex string, 12 byte Uint8Array, or an integer[39m
+2024-01-21 22:42:03:423 - [35mhttp[39m : [35mDELETE /api/movie/65ac001205288f3d1233a73d%0A 500 38 - 11.833 ms[39m
+[35m[39m
+2024-01-21 22:42:26:4226 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:42:26:4226 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:42:34:4234 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:42:34:4234 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:44:14:4414 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:44:14:4414 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:44:33:4433 - [31merror[39m : [31mErro no sistema: movie.delete is not a function[39m
+2024-01-21 22:44:33:4433 - [35mhttp[39m : [35mDELETE /api/movie/65ac001205288f3d1233a73d 500 38 - 75.303 ms[39m
+[35m[39m
+2024-01-21 22:47:08:478 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:47:08:478 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:47:10:4710 - [31merror[39m : [31mErro no sistema: movie.deleteMany is not a function[39m
+2024-01-21 22:47:10:4710 - [35mhttp[39m : [35mDELETE /api/movie/65ac001205288f3d1233a73d 500 38 - 40.225 ms[39m
+[35m[39m
+2024-01-21 22:48:09:489 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:48:09:489 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:48:26:4826 - [35mhttp[39m : [35mDELETE /api/movie/65ac001205288f3d1233a73d 200 36 - 78.505 ms[39m
+[35m[39m
+2024-01-21 22:49:02:492 - [35mhttp[39m : [35mDELETE /api/movie/65ac760055f376b81e091dfc 200 36 - 64.852 ms[39m
+[35m[39m
+2024-01-21 22:49:24:4924 - [32minfo[39m : [32mConectou ao banco de dados[39m
+2024-01-21 22:49:24:4924 - [32minfo[39m : [32mAplicação rodando na porta 3000[39m
+2024-01-21 22:49:37:4937 - [35mhttp[39m : [35mDELETE /api/movie/65adc9a5a0aa1fd14d391920 404 31 - 63.778 ms[39m
+[35m[39m
+2024-01-21 22:50:00:500 - [35mhttp[39m : [35mDELETE /api/movie/65ac7f9872b0d879fda50dc2 200 36 - 79.069 ms[39m
+[35m[39m
