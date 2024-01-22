@@ -4,6 +4,7 @@ import {
   findMovieById,
   getAllMovies,
   removieMovie,
+  updateMovie,
 } from "./controller/MovieControllers";
 
 import { validate } from "./middleware/handleValidation";
@@ -15,7 +16,8 @@ export default router
   .get("/test", (req: Request, res: Response) => {
     res.status(200).send("API working!");
   })
-  .post("/movie", movieCreateValidation, validate, createMovie)
+  .post("/movie", movieCreateValidation(), validate, createMovie)
   .get("/movie/:id", findMovieById)
   .get("/movie", getAllMovies)
-  .delete("/movie/:id", removieMovie);
+  .delete("/movie/:id", removieMovie)
+  .patch("/movie/:id",movieCreateValidation(),validate,updateMovie)
